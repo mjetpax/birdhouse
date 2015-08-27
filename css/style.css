@@ -1,0 +1,290 @@
+.birdhouse{
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*-- setting border box on all elements inside the grid --*/
+.birdhouse *{
+    box-sizing: border-box; 
+}
+
+/*-- our cleafix hack -- */ 
+.landing:before, 
+.landing:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+[class*='bird-'] {
+    float: left; 
+    min-height: 1px; 
+    width: 16.66%; 
+    /*-- our gutter -- */
+    padding: 12px; 
+    background-color: #FFDCDC;
+}
+
+/*.bird-1{ width: 16.66%; }
+.bird-2{ width: 33.33%; }
+.bird-3{ width: 50%;    }
+.bird-4{ width: 66.66%; }
+.bird-5{ width: 83.33%; }
+.bird-6{ width: 100%;   }*/
+
+.bird-1{ width: 12.5%; }
+.bird-2{ width: 25%; }
+.bird-3{ width: 37.5%; }
+.bird-4{ width: 50%; }
+.bird-5{ width: 62.5%; }
+.bird-6{ width: 75%;   }
+.bird-7{ width: 87.5%;   }
+.bird-8{ width: 100%;   }
+
+.outline, .outline *{
+    outline: 1px solid #F6A1A1; 
+}
+
+/*-- some extra column content styling --*/
+[class*='bird-'] > p {
+     background-color: #FFC2C2; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+}
+
+ @media all and (max-width:800px){
+    .bird-1{ width: 25%;    }
+    .bird-2{ width: 50%;        }
+    .bird-3{ width: 50%;    }
+    .bird-4{ width: 50%;    }
+    .bird-5{ width: 100%;    }
+    .bird-6{ width: 100%;      }
+    .bird-7{ width: 100%;      }
+    .bird-8{ width: 100%;      }
+
+    .landing .bird-3:last-of-type{
+        width: 100%; 
+    }
+
+    .landing .bird-3 ~ .bird-2{
+        width: 100%; 
+    }
+
+    .landing .bird-3 ~ .bird-5{
+        width: 50%; 
+    }
+
+    .landing .bird-2 + .bird-1{
+        width: 50%; 
+    }
+    
+    .landing .bird-2 + .bird-5{
+        width: 50%; 
+    }
+
+    .landing .bird-1 + .bird-1 + .bird-1 + .bird-5{
+        width: 25%;
+    }
+
+    .landing .bird-5 + .bird-1 + .bird-1 + .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-5 ~ .bird-1{
+        width: 50%; 
+    }
+
+    .landing .bird-1 + .bird-1 + .bird-5{
+        width: 50%; 
+    }
+
+    .landing .bird-1 + .bird-1 + .bird-5  + .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-5 + .bird-1 + .bird-2{
+        width: 50%; 
+    }
+
+    .landing .bird-1 + .bird-5{
+        width: 75%; 
+    }
+
+    .landing .bird-1 + .bird-5 + .bird-2{
+        width: 100%; 
+    }
+
+    .landing .bird-2 + .bird-5 + .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-2 + .bird-1 + .bird-5{
+        width: 100%; 
+    }
+
+    .landing .bird-1 + .bird-2{
+        width: 75%; 
+    }
+
+    .landing .bird-1 + .bird-2 + .bird-5{
+        width: 100% 
+    }
+
+    .landing .bird-5 ~ .bird-3{
+        width: 100%; 
+    }
+
+    .landing .bird-6 ~ .bird-1{
+        width: 50%; 
+    }
+
+    .landing .bird-1 ~ .bird-6{
+        width: 50%; 
+    }
+
+    .landing .bird-1 + .bird-6 + .bird-1{
+        width: 25%; 
+    }
+
+    .landing .bird-2 ~ .bird-6{
+        width: 50%; 
+    }
+
+    .landing .bird-6 ~ .bird-2{
+        width: 100%; 
+    }
+
+    .landing .bird-7 ~ .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-1 ~ .bird-7{
+        width: 75%; 
+    }
+
+}
+
+ @media all and (max-width:650px){
+    .bird-1{ width: 100%;        }
+    .bird-2{ width: 100%;    }
+    .bird-3{ width: 100%;    }
+    .bird-4{ width: 100%;    }
+    .bird-5{ width: 100%;    }
+    .bird-6{ width: 100%;      }
+    .bird-7{ width: 100%;      }
+    .bird-8{ width: 100%;      }
+
+    .landing .bird-1 ~ .bird-7{
+        width: 100%; 
+    }
+
+    .landing .bird-1 + .bird-6{
+        width: 100%; 
+    }
+
+    .landing .bird-1 + .bird-1 + .bird-6{
+        width: 100%; 
+    }
+
+    .landing .bird-1 + .bird-6 + .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-2 ~ .bird-6{
+        width: 100%; 
+    }
+
+    .landing .bird-2 ~ .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-2 + .bird-5{
+        width: 100%; 
+    }
+
+    .landing .bird-1 ~ .bird-2{
+        width: 100%; 
+    }
+
+    .landing .bird-1 + .bird-5{
+        width: 100%; 
+    }
+
+    .landing .bird-1 + .bird-1 + .bird-5{
+        width: 100%; 
+    }
+
+    .landing .bird-1 + .bird-1 + .bird-1 + .bird-5{
+        width: 100%; 
+    }
+
+    .landing .bird-3 + .bird-5{
+        width: 100%; 
+    }
+
+    .landing .bird-5 + .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-5 + .bird-1 + .bird-1{
+        width: 100%; 
+    }
+
+    .landing .bird-5 + .bird-1 + .bird-2{
+        width: 100%; 
+    }
+}
+}
+
+/*http://jsfiddle.net/jerryliu1/0hvbs0x5/*/
+        /*.rating{
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            text-align: center;
+        }
+        .rating > span {
+            display: inline-block;
+            position: relative;
+            width: 1.1em;
+        }
+         .rating > span:hover{
+             cursor:pointer;
+         }
+         .rating > span:hover:before,
+         .rating > span:hover ~ span:before{
+            content: "\2605";
+            position: absolute;
+        }*/
+
+
+/*http://jsfiddle.net/aLhv9r1w/316/*/
+ /* <div id="list">
+    <span>1</span>  <!-- this will be selected -->
+    <p>2</p>        <!-- this will be selected -->
+    <p>3</p>        <!-- this will be selected -->
+    <div>4</div>    <!-- this will be selected -->
+    <div>5</div>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p>
+</div>
+
+#list > * {
+    display: inline-block;
+    padding: 20px 28px;
+    margin-right: 5px;
+    border: 1px solid #bbb;
+    background: #ddd;
+    color: #444;
+    margin: 0.4em 0;
+}
+
+#list :nth-child(-n+4) {
+    color: #600b90;
+    border: 1px dashed red;
+    background: orange;
+}*/
