@@ -17,186 +17,116 @@
     box-sizing: border-box; 
 }
 
-.landing:before, 
-.landing:after {
-    content:"";
-    display: table;
-    clear:both;
+
+
+
+.landing {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 [class*='bird-'] {
-    float: left; 
-    min-height: 1px; 
-    width: 16.66%; 
-    /* gutter */
-    padding: .6em; 
-    background-color: #C390D4;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
 }
 
-.bird-1 { width: 12.5%; }
-.bird-2 { width: 25%; }
-.bird-3 { width: 37.5%; }
-.bird-4 { width: 50%; }
-.bird-5 { width: 62.5%; }
-.bird-6 { width: 75%; }
-.bird-7 { width: 87.5% }
-.bird-8 { width: 100%; }
+/* remove later!!!!!!!!! */
+[class*='bird-'] {
+  background: CadetBlue;  
+  color: white;
+  border: 5px solid white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+} 
 
-.outline, .outline *{
-    outline: 1px solid #A1D490; 
+/*.bird-1 { background: tomato; }
+.bird-2 { background: deepskyblue; }
+.bird-3 { background: darkorchid; }
+.bird-4 { background: cadetblue; }
+.bird-5 { background: darkorchid; }
+.bird-6 { background: darkorchid; }
+.bird-7 { background: darkorchid; }
+.bird-8 { background: darkorchid; }
+.bird-9 { background: darkorchid; }
+.bird-10 { background: darkorchid; }
+.bird-11 { background: darkorchid; }
+.bird-12 { background: darkorchid; }
+.bird-13 { background: darkorchid; }
+.bird-14 { background: darkorchid; }
+.bird-15 { background: darkorchid; }
+.bird-16 { background: darkorchid; }*/
+
+
+/* nested */
+[class*='bird-'] > .landing > [class*='bird-'] {
+  /*padding: 0;
+  border: 0;*/
+  background-color: gold;
+} 
+
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 600px) {
+  .bird-1 { flex-basis: 25%; }
+  .bird-2 { flex-basis: 50%; }
+  .bird-3 { flex-basis: 75%; }
+  .bird-4 { flex-basis: 100%; }
+  .bird-5 { flex-basis: 100%; }
+  .bird-6 { flex-basis: 100%; }
+  .bird-7 { flex-basis: 100%; }
+  .bird-8 { flex-basis: 100%; }
+  .bird-9 { flex-basis: 100%; }
+  .bird-10 { flex-basis: 100%; }
+  .bird-11 { flex-basis: 100%; }
+  .bird-12 { flex-basis: 100%; }
+  .bird-13 { flex-basis: 100%; }
+  .bird-14 { flex-basis: 100%; }
+  .bird-15 { flex-basis: 100%; }
+  .bird-16 { flex-basis: 100%; }
 }
 
-[class*='bird-'] > p {
-    background-color: #90C3D4; 
-    padding: 0;
-    margin: 0;
-    text-align: center; 
-    color: white; 
+@media (min-width: 700px) {
+  .bird-1 { flex-basis: 12.5%; }
+  .bird-2 { flex-basis: 25%; }
+  .bird-3 { flex-basis: 37.5%; }
+  .bird-4 { flex-basis: 50%; }
+  .bird-5 { flex-basis: 62.5%; }
+  .bird-6 { flex-basis: 75%; }
+  .bird-7 { flex-basis: 87.5%; }
+  .bird-8 { flex-basis: 100%; }
+  .bird-9 { flex-basis: 100%; }
+  .bird-10 { flex-basis: 100%; }
+  .bird-11 { flex-basis: 100%; }
+  .bird-12 { flex-basis: 100%; }
+  .bird-13 { flex-basis: 100%; }
+  .bird-14 { flex-basis: 100%; }
+  .bird-15 { flex-basis: 100%; }
+  .bird-16 { flex-basis: 100%; }
 }
 
-[class*='bird-'] > [class*='bird-'] {
-    padding: 0;
-    margin: 0;
-}
+@media (min-width: 1000px) {
+  .bird-1 { flex-basis: 6.25%; }
+  .bird-2 { flex-basis: 12.5%; }
+  .bird-3 { flex-basis: 18.75%; }
+  .bird-4 { flex-basis: 25%; }
+  .bird-5 { flex-basis: 31.25%; }
+  .bird-6 { flex-basis: 37.5%; }
+  .bird-7 { flex-basis: 43.75%; }
+  .bird-8 { flex-basis: 50%; }
+  .bird-9 { flex-basis: 56.25%; }
+  .bird-10 { flex-basis: 62.5%; }
+  .bird-11 { flex-basis: 68.75%; }
+  .bird-12 { flex-basis: 75%; }
+  .bird-13 { flex-basis: 81.25%; }
+  .bird-14 { flex-basis: 87.5%; }
+  .bird-15 { flex-basis: 93.75%; }
+  .bird-16 { flex-basis: 100%; }
 
-@media all and (max-width:51em){
-    .bird-1 { width: 25%; }
-    .bird-2 { width: 50%; }
-    .bird-3 { width: 50%; }
-    .bird-4 { width: 50%; }
-    .bird-5 { width: 100%; }
-    .bird-6 { width: 100%; }
-    .bird-7 { width: 100%; }
-    .bird-8 { width: 100%; }
-
-    .landing .bird-1 + .bird-3 { width: 75%; }
-    .landing .bird-1 + .bird-3 + .bird-2 { width: 50%; }
-    .landing .bird-1 + .bird-3 + .bird-2 + .bird-2 { width: 50%; } 
-    .landing .bird-1 ~ .bird-1 ~ .bird-3 { width: 75%; }
-    .landing .bird-1 + .bird-1 + .bird-3 { width: 50%; }
-    .landing .bird-1 + .bird-1 + .bird-3:last-of-type { width: 75%; }
-    .landing .bird-1 + .bird-1 + .bird-3 + .bird-3 { width: 100%; }
-    .landing .bird-1 + .bird-1 + .bird-1 + .bird-5 { width: 25%; }
-    .landing .bird-1 + .bird-2 + .bird-1 { width: 25%; }
-    .landing .bird-1 + .bird-3 + .bird-4 { width: 100%; }
-    .landing .bird-1 + .bird-1 + .bird-5 { width: 50%; }
-    .landing .bird-1 + .bird-1 + .bird-5  + .bird-1 { width: 100%; }
-    .landing .bird-1 + .bird-5 { width: 75%; }
-    .landing .bird-1 + .bird-5 + .bird-2 { width: 100%; }
-    .landing .bird-1 + .bird-2 { width: 75%; }
-    .landing .bird-1 + .bird-2 + .bird-5 { width: 100% }
-    .landing .bird-1 ~ .bird-6 { width: 50%; }
-    .landing .bird-1 + .bird-6 + .bird-1 { width: 25%; }
-    .landing .bird-1 ~ .bird-7 { width: 75%; }
-    
-    .landing .bird-2 ~ .bird-1:last-of-type{ width: 100%; }
-    .landing .bird-2 + .bird-2 + .bird-1 + .bird-3 { width: 50%; }
-    .landing .bird-2 + .bird-3 + .bird-1 { width: 50%; }
-    .landing .bird-2 + .bird-3 + .bird-1 + .bird-1 { width: 25%; }
-    .landing .bird-2 + .bird-3 + .bird-1 + .bird-1 + .bird-1 { width: 25%; }
-    .landing .bird-2 + .bird-1 { width: 50%; }
-    .landing .bird-2 + .bird-1 + .bird-3 { width: 50%; }
-    .landing .bird-2 + .bird-5 { width: 50%; }
-    .landing .bird-2 + .bird-2 + .bird-4 { width: 100%; }
-    .landing .bird-2 + .bird-4 + .bird-2 { width: 100%; }
-    .landing .bird-2 + .bird-5 + .bird-1 { width: 100%; }
-    .landing .bird-2 + .bird-1 + .bird-5 { width: 100%; }
-    .landing .bird-2 ~ .bird-6 { width: 50%; }
-
-    .landing .bird-3:last-of-type { width: 100%; }
-    .landing .bird-3 ~ .bird-2 { width: 100%; }
-    .landing .bird-3 ~ .bird-5 { width: 50%; }
-    .landing .bird-3 + .bird-1 { width: 50%; }
-    .landing .bird-3 + .bird-2 { width: 50%; }
-    .landing .bird-3 + .bird-2 + .bird-1 + .bird-1 { width: 50%; }
-    .landing .bird-3 + .bird-1 + .bird-2 { width: 50%; }
-    .landing .bird-3 + .bird-3 + .bird-2 { width: 100%; }
-    .landing .bird-3 + .bird-3 + .bird-1 + .bird-1 { width: 50%; }
-    .landing .bird-3 + .bird-1 + .bird-3 + .bird-1 { width: 50%; }
-    .landing .bird-3 + .bird-1 + .bird-3 { width: 50%; }
-    .landing .bird-3 + .bird-1  + .bird-2  + .bird-2 { width: 50%; }
-    .landing .bird-3 + .bird-1 + .bird-4 { width: 100%; }
-
-    .landing .bird-4 + .bird-2 { width: 25%; }
-    .landing .bird-4 + .bird-1 + .bird-2 { width: 25%; }
-    .landing .bird-4 + .bird-1 + .bird-2 + .bird-1 { width: 100%; }
-    .landing .bird-4 + .bird-2 + .bird-1 { width: 25%; }
-    .landing .bird-4 + .bird-2 + .bird-1 + .bird-1 { width: 100%; }
-    .landing .bird-4 + .bird-2 + .bird-2 { width: 25%; }
-    .landing .bird-4 + .bird-3 { width: 25%; }
-    .landing .bird-4 + .bird-3 + .bird-1 { width: 25%; }
-    .landing .bird-4 + .bird-1 + .bird-1 + .bird-2 { width: 100%; }
-    .landing .bird-4 + .bird-1 + .bird-3 { width: 25%; }
-
-    .landing .bird-5 + .bird-1 + .bird-1 + .bird-1 { width: 100%; }
-    .landing .bird-5 ~ .bird-1 { width: 50%; }
-    .landing .bird-5 + .bird-2 + .bird-1 { width: 50%; }
-    .landing .bird-5 + .bird-1 + .bird-2 { width: 50%; }
-    .landing .bird-5 ~ .bird-3 { width: 100%; }
-    .landing .bird-6 ~ .bird-1 { width: 50%; }
-    .landing .bird-6 ~ .bird-2 { width: 100%; }
-
-    .landing .bird-7 ~ .bird-1 { width: 100%; }
-}
-
-@media all and (max-width:36em){
-    .bird-1 { width: 100%; }
-    .bird-2 { width: 100%; }
-    .bird-3 { width: 100%; }
-    .bird-4 { width: 100%; }
-    .bird-5 { width: 100%; }
-    .bird-6 { width: 100%; }
-    .bird-7 { width: 100%; }
-    .bird-8 { width: 100%; }
-
-    .landing .bird-1 + .bird-1 + .bird-3 { width: 100%; }
-    .landing .bird-1 + .bird-1 + .bird-1 + .bird-5 { width: 100%; }
-    .landing .bird-1 + .bird-1 + .bird-1 + .bird-1 + .bird-1 + .bird-3 { width: 100%; }
-    .landing .bird-1 + .bird-1 + .bird-5 { width: 100%; }
-    .landing .bird-1 + .bird-1 + .bird-6 { width: 100%; }
-    .landing .bird-1 + .bird-2 + .bird-1 { width: 100%; }
-    .landing .bird-1 ~ .bird-2 { width: 100%; }
-    .landing .bird-1 ~ .bird-3 { width: 100%; }
-    .landing .bird-1 + .bird-3 + .bird-2 { width: 100%; }
-    .landing .bird-1 + .bird-3 + .bird-2 + .bird-2 { width: 100%; }
-    .landing .bird-1 + .bird-5 { width: 100%; }
-    .landing .bird-1 + .bird-6 { width: 100%; }
-    .landing .bird-1 + .bird-6 + .bird-1 { width: 100%; }
-    .landing .bird-1 ~ .bird-7 { width: 100%; }
-
-    .landing .bird-2 ~ .bird-1 { width: 100%; }
-    .landing .bird-2 + .bird-1 + .bird-3 { width: 100%; }
-    .landing .bird-2 + .bird-2 + .bird-1 + .bird-3 { width: 100%; }
-    .landing .bird-2 + .bird-3 + .bird-1 { width: 100%; }
-    .landing .bird-2 + .bird-3 + .bird-1 + .bird-1 { width: 100%; }
-    .landing .bird-2 + .bird-3 + .bird-1 + .bird-1 + .bird-1 { width: 100%; }
-    .landing .bird-2 ~ .bird-6 { width: 100%; }
-    .landing .bird-2 + .bird-5 { width: 100%; }
-
-    .landing .bird-3 + .bird-1 { width: 100%; }
-    .landing .bird-3 + .bird-1 + .bird-2 { width: 100%; }
-    .landing .bird-3 + .bird-1 + .bird-2 + .bird-2 { width: 100%; }
-    .landing .bird-3 + .bird-1 + .bird-3 { width: 100%; }
-    .landing .bird-3 + .bird-1 + .bird-3 + .bird-1 { width: 100%; }
-    .landing .bird-3 + .bird-2 { width: 100%; }
-    .landing .bird-3 + .bird-2 + .bird-1 + .bird-1 { width: 100%; }
-    .landing .bird-3 + .bird-3 + .bird-1 + .bird-1 { width: 100%; }
-    .landing .bird-3 + .bird-1 + .bird-1 + .bird-3 { width: 100%; }
-    .landing .bird-3 + .bird-5 { width: 100%; }
-
-    .landing .bird-4 + .bird-1 + .bird-2 { width: 100%; }
-    .landing .bird-4 + .bird-1 + .bird-3 { width: 100%; }
-    .landing .bird-4 + .bird-2 { width: 100%; }
-    .landing .bird-4 + .bird-2 + .bird-1 { width: 100%; }
-    .landing .bird-4 + .bird-2 + .bird-2 { width: 100%; }
-    .landing .bird-4 + .bird-3 { width: 100%; }
-    .landing .bird-4 + .bird-3 + .bird-1 { width: 100%; }
-
-    .landing .bird-5 + .bird-1 { width: 100%; }
-    .landing .bird-5 + .bird-1 + .bird-1 { width: 100%; }
-    .landing .bird-5 + .bird-1 + .bird-2 { width: 100%; }
-    .landing .bird-5 + .bird-2 + .bird-1 { width: 100%; }
-    
-    .landing .bird-6 + .bird-1 { width: 100%; }
-    .landing .bird-6 + .bird-1 + .bird-1 { width: 100%; }
 }
