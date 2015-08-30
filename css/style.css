@@ -17,26 +17,25 @@
     box-sizing: border-box; 
 }
 
-
-
-
 .landing {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -ms-flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 [class*='bird-'] {
-  flex-grow: 1;
+/*  flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 100%;
-  -webkit-flex-basis: 100%;
+  -webkit-flex-basis: 100%;*/
+  -webkit-flex: 1 0 100%;          /* Chrome */
+  -ms-flex: 1 0 100%;              /* IE 10 */
+  flex: 1 0 100%;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 /* remove later!!!!!!!!! */
@@ -118,7 +117,12 @@
 }
 
 @media (min-width: 1000px) {
-  .bird-1 { flex-basis: 6.25%; }
+    .bird-1 { 
+        /*flex-basis: 6.25%;*/
+        -webkit-flex: 1 0 6.25%;
+        -ms-flex: 1 0 6.25%;
+        flex: 1 0 6.25%;
+    }
   .bird-2 { flex-basis: 12.5%; }
   .bird-3 { flex-basis: 18.75%; }
   .bird-4 { flex-basis: 25%; }
