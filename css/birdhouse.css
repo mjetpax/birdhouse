@@ -87,52 +87,88 @@
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 30em) {
-  .bhcol-1 {
+@media only screen and (min-width: 64em) {
+  .birdhouse .row .col-1 {
     flex-basis: 8.33333%;
   }
+  .birdhouse .row .col-1 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-2 {
+  .birdhouse .row .col-2 {
     flex-basis: 16.66667%;
   }
+  .birdhouse .row .col-2 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-3 {
+  .birdhouse .row .col-3 {
     flex-basis: 25%;
   }
+  .birdhouse .row .col-3 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-4 {
+  .birdhouse .row .col-4 {
     flex-basis: 33.33333%;
   }
+  .birdhouse .row .col-4 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-5 {
+  .birdhouse .row .col-5 {
     flex-basis: 41.66667%;
   }
+  .birdhouse .row .col-5 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-6 {
+  .birdhouse .row .col-6 {
     flex-basis: 50%;
   }
+  .birdhouse .row .col-6 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-7 {
+  .birdhouse .row .col-7 {
     flex-basis: 58.33333%;
   }
+  .birdhouse .row .col-7 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-8 {
+  .birdhouse .row .col-8 {
     flex-basis: 66.66667%;
   }
+  .birdhouse .row .col-8 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-9 {
+  .birdhouse .row .col-9 {
     flex-basis: 75%;
   }
+  .birdhouse .row .col-9 else {
+    flex-basis: 100%;
+  }
 
-  .bhcol-10 {
+  .birdhouse .row .col-10 {
     flex-basis: 83.33333%;
   }
-
-  .bhcol-11 {
-    flex-basis: 91.66667%;
+  .birdhouse .row .col-10 else {
+    flex-basis: 100%;
   }
 
-  .bhcol-12 {
+  .birdhouse .row .col-11 {
+    flex-basis: 91.66667%;
+  }
+  .birdhouse .row .col-11 else {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .col-12 {
+    flex-basis: 100%;
+  }
+  .birdhouse .row .col-12 else {
     flex-basis: 100%;
   }
 }
