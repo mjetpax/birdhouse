@@ -20,7 +20,7 @@
     @include birdhouse-border-box;
 }
 
-.landing {
+.row {
   padding: 0;
   margin: 0;
   display: -ms-flexbox;
@@ -38,7 +38,7 @@
   flex-flow: row wrap;*/
 }
 
-[class*='bird-'] {
+[class*='columns-'] {
   -ms-flex-positive: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -56,7 +56,7 @@
 }
 
 /* remove later!!!!!!!!! */
-[class*='bird-'] {
+[class*='columns-'] {
   background: CadetBlue;  
   color: white;
   border: 5px solid white;
@@ -65,26 +65,26 @@
   text-align: center;
 } 
 
-/*.bird-1 { background: tomato; }
-.bird-2 { background: deepskyblue; }
-.bird-3 { background: darkorchid; }
-.bird-4 { background: cadetblue; }
-.bird-5 { background: darkorchid; }
-.bird-6 { background: darkorchid; }
-.bird-7 { background: darkorchid; }
-.bird-8 { background: darkorchid; }
-.bird-9 { background: darkorchid; }
-.bird-10 { background: darkorchid; }
-.bird-11 { background: darkorchid; }
-.bird-12 { background: darkorchid; }
-.bird-13 { background: darkorchid; }
-.bird-14 { background: darkorchid; }
-.bird-15 { background: darkorchid; }
-.bird-16 { background: darkorchid; }*/
+/*.columns-1 { background: tomato; }
+.columns-2 { background: deepskyblue; }
+.columns-3 { background: darkorchid; }
+.columns-4 { background: cadetblue; }
+.columns-5 { background: darkorchid; }
+.columns-6 { background: darkorchid; }
+.columns-7 { background: darkorchid; }
+.columns-8 { background: darkorchid; }
+.columns-9 { background: darkorchid; }
+.columns-10 { background: darkorchid; }
+.columns-11 { background: darkorchid; }
+.columns-12 { background: darkorchid; }
+.columns-13 { background: darkorchid; }
+.columns-14 { background: darkorchid; }
+.columns-15 { background: darkorchid; }
+.columns-16 { background: darkorchid; }*/
 
 
 /* nested */
-[class*='bird-'] > .landing > [class*='bird-'] {
+[class*='columns-'] > .row > [class*='columns-'] {
   /*padding: 0;
   border: 0; */
   background-color: gold;
@@ -105,72 +105,72 @@
       $basis: 100%;
     }
 
-    .birdhouse .row .col-#{$i} { 
+    .birdhouse .row .columnsX-#{$i} { 
         flex-basis: $basis;
     }
   }
 }
 
 @media (min-width: 600px) {
-  .bird-1 { flex-basis: 25%; }
-  .bird-2 { flex-basis: 50%; }
-  .bird-3 { flex-basis: 75%; }
-  .bird-4 { flex-basis: 100%; }
-  .bird-5 { flex-basis: 100%; }
-  .bird-6 { flex-basis: 100%; }
-  .bird-7 { flex-basis: 100%; }
-  .bird-8 { flex-basis: 100%; }
-  .bird-9 { flex-basis: 100%; }
-  .bird-10 { flex-basis: 100%; }
-  .bird-11 { flex-basis: 100%; }
-  .bird-12 { flex-basis: 100%; }
-  .bird-13 { flex-basis: 100%; }
-  .bird-14 { flex-basis: 100%; }
-  .bird-15 { flex-basis: 100%; }
-  .bird-16 { flex-basis: 100%; }
+  .columns-1 { flex-basis: 25%; }
+  .columns-2 { flex-basis: 50%; }
+  .columns-3 { flex-basis: 75%; }
+  .columns-4 { flex-basis: 100%; }
+  .columns-5 { flex-basis: 100%; }
+  .columns-6 { flex-basis: 100%; }
+  .columns-7 { flex-basis: 100%; }
+  .columns-8 { flex-basis: 100%; }
+  .columns-9 { flex-basis: 100%; }
+  .columns-10 { flex-basis: 100%; }
+  .columns-11 { flex-basis: 100%; }
+  .columns-12 { flex-basis: 100%; }
+  .columns-13 { flex-basis: 100%; }
+  .columns-14 { flex-basis: 100%; }
+  .columns-15 { flex-basis: 100%; }
+  .columns-16 { flex-basis: 100%; }
 }
 
 @media (min-width: 700px) {
-  .bird-1 { flex-basis: 12.5%; }
-  .bird-2 { flex-basis: 25%; }
-  .bird-3 { flex-basis: 37.5%; }
-  .bird-4 { flex-basis: 50%; }
-  .bird-5 { flex-basis: 62.5%; }
-  .bird-6 { flex-basis: 75%; }
-  .bird-7 { flex-basis: 87.5%; }
-  .bird-8 { flex-basis: 100%; }
-  .bird-9 { flex-basis: 100%; }
-  .bird-10 { flex-basis: 100%; }
-  .bird-11 { flex-basis: 100%; }
-  .bird-12 { flex-basis: 100%; }
-  .bird-13 { flex-basis: 100%; }
-  .bird-14 { flex-basis: 100%; }
-  .bird-15 { flex-basis: 100%; }
-  .bird-16 { flex-basis: 100%; }
+  .columns-1 { flex-basis: 12.5%; }
+  .columns-2 { flex-basis: 25%; }
+  .columns-3 { flex-basis: 37.5%; }
+  .columns-4 { flex-basis: 50%; }
+  .columns-5 { flex-basis: 62.5%; }
+  .columns-6 { flex-basis: 75%; }
+  .columns-7 { flex-basis: 87.5%; }
+  .columns-8 { flex-basis: 100%; }
+  .columns-9 { flex-basis: 100%; }
+  .columns-10 { flex-basis: 100%; }
+  .columns-11 { flex-basis: 100%; }
+  .columns-12 { flex-basis: 100%; }
+  .columns-13 { flex-basis: 100%; }
+  .columns-14 { flex-basis: 100%; }
+  .columns-15 { flex-basis: 100%; }
+  .columns-16 { flex-basis: 100%; }
 }
 
 @media (min-width: 1000px) {
-    .bird-1 { 
+    .columns-1 { 
         -ms-flex-preferred-size: 6.25%;
         -webkit-flex-basis: 6.25%;
         flex-basis: 6.25%;
         /* max-width: 6.25%;*/
 
     }
-  .bird-2 { flex-basis: 12.5%; }
-  .bird-3 { flex-basis: 18.75%; }
-  .bird-4 { flex-basis: 25%; }
-  .bird-5 { flex-basis: 31.25%; }
-  .bird-6 { flex-basis: 37.5%; }
-  .bird-7 { flex-basis: 43.75%; }
-  .bird-8 { flex-basis: 50%; }
-  .bird-9 { flex-basis: 56.25%; }
-  .bird-10 { flex-basis: 62.5%; }
-  .bird-11 { flex-basis: 68.75%; }
-  .bird-12 { flex-basis: 75%; }
-  .bird-13 { flex-basis: 81.25%; }
-  .bird-14 { flex-basis: 87.5%; }
-  .bird-15 { flex-basis: 93.75%; }
-  .bird-16 { flex-basis: 100%; }
+  .columns-2 { flex-basis: 12.5%; }
+  .columns-3 { flex-basis: 18.75%; }
+  .columns-4 { flex-basis: 25%; }
+  .columns-5 { flex-basis: 31.25%; }
+  .columns-6 { flex-basis: 37.5%; }
+  .columns-7 { flex-basis: 43.75%; }
+  .columns-8 { flex-basis: 50%; }
+  .columns-9 { flex-basis: 56.25%; }
+  .columns-10 { flex-basis: 62.5%; }
+  .columns-11 { flex-basis: 68.75%; }
+  .columns-12 { flex-basis: 75%; }
+  .columns-13 { flex-basis: 81.25%; }
+  .columns-14 { flex-basis: 87.5%; }
+  .columns-15 { flex-basis: 93.75%; }
+  .columns-16 { flex-basis: 100%; }
 
 }
