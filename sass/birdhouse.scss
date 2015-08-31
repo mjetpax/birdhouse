@@ -99,14 +99,14 @@
 
 @media #{$birdhouse-breakpoint-medium} {
   @for $i from 1 through $birdhouse-columns {
-    .birdhouse .row .col-#{$i} { 
-      $basis: 100% / $birdhouse-columns * $i;
 
-      @if ($basis <= 100) {
+    $basis: 100% / $birdhouse-columns * $i;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .col-#{$i} { 
         flex-basis: $basis;
-      } else {
-        flex-basis: 100%;
-      }
     }
   }
 }
