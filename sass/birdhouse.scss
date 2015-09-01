@@ -10,6 +10,16 @@
 @import "_variables";
 @import "_mixins";
 
+@viewport {
+    width: device-width;
+    zoom: 1;
+ }
+
+@-ms-viewport {
+  width: device-width;
+  zoom: 1;
+}
+
 .birdhouse{
     width: 100%; 
     max-width: $birdhouse-grid-max-width;
