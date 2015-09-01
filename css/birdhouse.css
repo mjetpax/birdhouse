@@ -6,6 +6,14 @@
  * http://opensource.org/licenses/MIT
  *
  */
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+@-ms-viewport {
+  width: device-width;
+  zoom: 1;
+}
 .birdhouse {
   width: 100%;
   max-width: 90em;
