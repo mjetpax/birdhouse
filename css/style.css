@@ -1,0 +1,23 @@
+/* Birdhouse
+ * CSS responsive grid
+ *
+ * Copyright (c) 2015 Michael Babcock
+ * Distributed under the MIT License
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/* main divs */
+[class*='columns-'] {
+  background: CadetBlue;
+  color: white;
+  border: 5px solid white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* nested */
+[class*='columns-'] > .row > [class*='columns-'] {
+  background-color: gold;
+}
