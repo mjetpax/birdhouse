@@ -21,3 +21,8 @@
 [class*='columns-'] > .row > [class*='columns-'] {
   background-color: gold;
 }
+
+/* nested nested */
+[class*='columns-'] > .row > [class*='columns-'] > .row > [class*='columns-'] {
+  background-color: tomato;
+}
