@@ -1,5 +1,5 @@
 // grid variables
-$birdhouse-columns: 12;
+$birdhouse-columns: 16;
 $birdhouse-grid-max-width: 90em;
  
 // breakpoints
@@ -7,11 +7,15 @@ $birdhouse-grid-max-width: 90em;
 // mobile
 $birdhouse-breakpoint-xtra-small: "only screen";
 
-// 640px
-$birdhouse-breakpoint-small: "only screen and (min-width: 40em)";
+// 640px 40em
+$birdhouse-breakpoint-small: "only screen and (min-width: 640px)";
 
-// 1024px
-$birdhouse-breakpoint-medium: "only screen and (min-width: 64em)";
+// 800px 64em
+$birdhouse-breakpoint-medium: "only screen and (min-width: 800px)";
 
-// 1440px
-$birdhouse-breakpoint-large: "only screen and (min-width: 90em)";
+// 1200px 90em
+$birdhouse-breakpoint-large: "only screen and (min-width: 1200px)";
+
+// 1900px 120em
+$birdhouse-breakpoint-xtra-large: "only screen and (min-width: 1900px)";
+

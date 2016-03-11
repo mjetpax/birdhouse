@@ -57,9 +57,10 @@
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-@media #{$birdhouse-breakpoint-small} {}
 
-@media #{$birdhouse-breakpoint-medium} {
+/* Small devices (mobile) */
+@media #{$birdhouse-breakpoint-xtra-small} {
+
   @for $i from 1 through $birdhouse-columns {
 
     $basis: 100% / $birdhouse-columns * $i;
@@ -67,12 +68,89 @@
       $basis: 100%;
     }
 
-    .birdhouse .row .columnsX-#{$i} { 
+    .birdhouse .row .columns-xsmall-#{$i} { 
         flex-basis: $basis;
     }
   }
 }
 
+/* Small devices (mobile) */
+@media #{$birdhouse-breakpoint-small} {
+
+  @for $i from 1 through $birdhouse-columns {
+
+    $basis: 100% / $birdhouse-columns * $i;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .columns-small-#{$i} { 
+        flex-basis: $basis;
+    }
+  }
+}
+
+/* Medium devices (desktops) */
+@media #{$birdhouse-breakpoint-medium} {
+  
+  /* default */
+  @for $i from 1 through $birdhouse-columns {
+
+    $basis: 100% / $birdhouse-columns * $i;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .columns-#{$i} { 
+        flex-basis: $basis;
+    }
+  }
+
+  /* by suffix assignment */
+  @for $i from 1 through $birdhouse-columns {
+
+    $basis: 100% / $birdhouse-columns * $i;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .columns-medium-#{$i} { 
+        flex-basis: $basis;
+    }
+  }
+}
+
+@media #{$birdhouse-breakpoint-large} {
+
+  @for $i from 1 through $birdhouse-columns {
+
+    $basis: 100% / $birdhouse-columns * $i;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .columns-large-#{$i} { 
+        flex-basis: $basis;
+    }
+  }
+}
+
+@media #{$birdhouse-breakpoint-xtra-large} {
+
+  @for $i from 1 through $birdhouse-columns {
+
+    $basis: 100% / $birdhouse-columns * $i;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .columns-xlarge-#{$i} { 
+        flex-basis: $basis;
+    }
+  }
+}
+
+/*
 @media (min-width: 600px) {
   .columns-1 { flex-basis: 25%; }
   .columns-2 { flex-basis: 50%; }
@@ -133,3 +211,4 @@
   .columns-15 { flex-basis: 93.75%; }
   .columns-16 { flex-basis: 100%; }
 }
+*/
