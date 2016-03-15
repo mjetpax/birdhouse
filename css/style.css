@@ -20,4 +20,11 @@
 /* nested */
 [class*='columns-'] > .row > [class*='columns-'] {
   background-color: gold;
+  border: 2px solid white;
+}
+
+/* nested nested */
+[class*='columns-'] > .row > [class*='columns-']  > .row > [class*='columns-'] {
+  background-color: tomato;
+  border: 2px solid white;
 }

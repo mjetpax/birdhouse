@@ -16,8 +16,13 @@
  */
 .birdhouse {
   width: 100%;
-  max-width: 90em;
+  max-width: 100em;
   margin: 0 auto;
+}
+
+.birdhouse.fluid {
+  width: 100%;
+  max-width: 100%;
 }
 
 .birdhouse * {
@@ -57,6 +62,71 @@
 /* Large devices (large desktops, 1200px and up) */
 /* Small devices (mobile) */
 @media only screen {
+  /* lazy */
+  .birdhouse .row .columns-lazy-1 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-2 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-3 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-4 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-5 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-6 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-7 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-8 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-9 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-10 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-11 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-12 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-13 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-14 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-15 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-16 {
+    flex-basis: 100%;
+  }
+
   .birdhouse .row .columns-xsmall-1 {
     flex-basis: 6.25%;
   }
@@ -122,7 +192,72 @@
   }
 }
 /* Small devices (mobile) */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 40em) {
+  /* lazy */
+  .birdhouse .row .columns-lazy-1 {
+    flex-basis: 25%;
+  }
+
+  .birdhouse .row .columns-lazy-2 {
+    flex-basis: 50%;
+  }
+
+  .birdhouse .row .columns-lazy-3 {
+    flex-basis: 75%;
+  }
+
+  .birdhouse .row .columns-lazy-4 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-5 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-6 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-7 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-8 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-9 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-10 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-11 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-12 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-13 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-14 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-15 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-16 {
+    flex-basis: 100%;
+  }
+
   .birdhouse .row .columns-small-1 {
     flex-basis: 6.25%;
   }
@@ -188,69 +323,69 @@
   }
 }
 /* Medium devices (desktops) */
-@media only screen and (min-width: 800px) {
-  /* default */
-  .birdhouse .row .columns-1 {
-    flex-basis: 6.25%;
-  }
-
-  .birdhouse .row .columns-2 {
+@media only screen and (min-width: 50em) {
+  /* lazy */
+  .birdhouse .row .columns-lazy-1 {
     flex-basis: 12.5%;
   }
 
-  .birdhouse .row .columns-3 {
-    flex-basis: 18.75%;
-  }
-
-  .birdhouse .row .columns-4 {
+  .birdhouse .row .columns-lazy-2 {
     flex-basis: 25%;
   }
 
-  .birdhouse .row .columns-5 {
-    flex-basis: 31.25%;
-  }
-
-  .birdhouse .row .columns-6 {
+  .birdhouse .row .columns-lazy-3 {
     flex-basis: 37.5%;
   }
 
-  .birdhouse .row .columns-7 {
-    flex-basis: 43.75%;
-  }
-
-  .birdhouse .row .columns-8 {
+  .birdhouse .row .columns-lazy-4 {
     flex-basis: 50%;
   }
 
-  .birdhouse .row .columns-9 {
-    flex-basis: 56.25%;
-  }
-
-  .birdhouse .row .columns-10 {
+  .birdhouse .row .columns-lazy-5 {
     flex-basis: 62.5%;
   }
 
-  .birdhouse .row .columns-11 {
-    flex-basis: 68.75%;
-  }
-
-  .birdhouse .row .columns-12 {
+  .birdhouse .row .columns-lazy-6 {
     flex-basis: 75%;
   }
 
-  .birdhouse .row .columns-13 {
-    flex-basis: 81.25%;
-  }
-
-  .birdhouse .row .columns-14 {
+  .birdhouse .row .columns-lazy-7 {
     flex-basis: 87.5%;
   }
 
-  .birdhouse .row .columns-15 {
-    flex-basis: 93.75%;
+  .birdhouse .row .columns-lazy-8 {
+    flex-basis: 100%;
   }
 
-  .birdhouse .row .columns-16 {
+  .birdhouse .row .columns-lazy-9 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-10 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-11 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-12 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-13 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-14 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-15 {
+    flex-basis: 100%;
+  }
+
+  .birdhouse .row .columns-lazy-16 {
     flex-basis: 100%;
   }
 
@@ -319,7 +454,72 @@
     flex-basis: 100%;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75em) {
+  /* lazy */
+  .birdhouse .row .columns-lazy-1 {
+    flex-basis: 6.25%;
+  }
+
+  .birdhouse .row .columns-lazy-2 {
+    flex-basis: 12.5%;
+  }
+
+  .birdhouse .row .columns-lazy-3 {
+    flex-basis: 18.75%;
+  }
+
+  .birdhouse .row .columns-lazy-4 {
+    flex-basis: 25%;
+  }
+
+  .birdhouse .row .columns-lazy-5 {
+    flex-basis: 31.25%;
+  }
+
+  .birdhouse .row .columns-lazy-6 {
+    flex-basis: 37.5%;
+  }
+
+  .birdhouse .row .columns-lazy-7 {
+    flex-basis: 43.75%;
+  }
+
+  .birdhouse .row .columns-lazy-8 {
+    flex-basis: 50%;
+  }
+
+  .birdhouse .row .columns-lazy-9 {
+    flex-basis: 56.25%;
+  }
+
+  .birdhouse .row .columns-lazy-10 {
+    flex-basis: 62.5%;
+  }
+
+  .birdhouse .row .columns-lazy-11 {
+    flex-basis: 68.75%;
+  }
+
+  .birdhouse .row .columns-lazy-12 {
+    flex-basis: 75%;
+  }
+
+  .birdhouse .row .columns-lazy-13 {
+    flex-basis: 81.25%;
+  }
+
+  .birdhouse .row .columns-lazy-14 {
+    flex-basis: 87.5%;
+  }
+
+  .birdhouse .row .columns-lazy-15 {
+    flex-basis: 93.75%;
+  }
+
+  .birdhouse .row .columns-lazy-16 {
+    flex-basis: 100%;
+  }
+
   .birdhouse .row .columns-large-1 {
     flex-basis: 6.25%;
   }
@@ -384,7 +584,7 @@
     flex-basis: 100%;
   }
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 120em) {
   .birdhouse .row .columns-xlarge-1 {
     flex-basis: 6.25%;
   }

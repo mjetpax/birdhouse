@@ -24,6 +24,11 @@
     margin: 0 auto;
 }
 
+.birdhouse.fluid{
+    width: 100%;
+    max-width: 100%;
+}
+
 .birdhouse *{
     @include birdhouse-border-box;
 }
@@ -61,6 +66,14 @@
 /* Small devices (mobile) */
 @media #{$birdhouse-breakpoint-xtra-small} {
 
+  /* lazy */
+  @for $i from 1 through $birdhouse-columns {
+
+    .birdhouse .row .columns-lazy-#{$i} { 
+        flex-basis: 100%;
+    }
+  }
+
   @for $i from 1 through $birdhouse-columns {
 
     $basis: 100% / $birdhouse-columns * $i;
@@ -76,6 +89,19 @@
 
 /* Small devices (mobile) */
 @media #{$birdhouse-breakpoint-small} {
+
+  /* lazy */
+  @for $i from 1 through $birdhouse-columns {
+
+    $basis: 100% / $birdhouse-columns * $i * 4;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .columns-lazy-#{$i} { 
+        flex-basis: $basis;
+    }
+  }
 
   @for $i from 1 through $birdhouse-columns {
 
@@ -93,15 +119,15 @@
 /* Medium devices (desktops) */
 @media #{$birdhouse-breakpoint-medium} {
   
-  /* default */
+  /* lazy */
   @for $i from 1 through $birdhouse-columns {
 
-    $basis: 100% / $birdhouse-columns * $i;
+    $basis: 100% / $birdhouse-columns * $i * 2;
     @if ($basis > 100) {
       $basis: 100%;
     }
 
-    .birdhouse .row .columns-#{$i} { 
+    .birdhouse .row .columns-lazy-#{$i} { 
         flex-basis: $basis;
     }
   }
@@ -121,6 +147,19 @@
 }
 
 @media #{$birdhouse-breakpoint-large} {
+
+  /* lazy */
+  @for $i from 1 through $birdhouse-columns {
+
+    $basis: 100% / $birdhouse-columns * $i;
+    @if ($basis > 100) {
+      $basis: 100%;
+    }
+
+    .birdhouse .row .columns-lazy-#{$i} { 
+        flex-basis: $basis;
+    }
+  }
 
   @for $i from 1 through $birdhouse-columns {
 
