@@ -41,7 +41,7 @@ Lazy columns let the browser control various aspects of column management. Makin
 
 ### Class Aliases
 
-In addition, all column classes have an aliase to allow for rapid creation of HTML and lessening the amount of typing needed to utilize the Birdhouse classes.
+In addition, all column classes have an alias to allow for rapid creation of HTML and lessening the amount of typing needed to utilize the Birdhouse classes.
 
 * cxs1
 * csm1
