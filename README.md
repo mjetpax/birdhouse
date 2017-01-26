@@ -41,8 +41,9 @@ Lazy columns let the browser control various aspects of column management. Makin
 
 ### Class Aliases
 
-In addition, all column classes have an alias to allow for rapid creation of HTML and lessening the amount of typing needed to utilize the Birdhouse classes.
+In addition, all column classes have an alias to allow for rapid creation of HTML and lessening the amount of typing needed to utilize the Birdhouse classes. The .row class also has a .r alias that can be used.
 
+* r
 * cxs1
 * csm1
 * cmd1
@@ -53,7 +54,7 @@ In addition, all column classes have an alias to allow for rapid creation of HTM
 #### Example usage
 ```
 <div class="birdhouse">
-    <div class="row">
+    <div class="r">
         <div class="cxsm4">
         </div>
         <div class="csm4">

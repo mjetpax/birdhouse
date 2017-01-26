@@ -33,7 +33,7 @@
     @include birdhouse-border-box;
 }
 
-.row {
+.row, .r {
   padding: 0;
   margin: 0;
   display: -ms-flexbox;
@@ -47,7 +47,7 @@
   flex-wrap: wrap;
 }
 
-[class*='columns-'] {
+[class*='columns-'], .csx, .csm, .cmd, .clg, .cxl {
   -ms-flex-positive: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -64,7 +64,7 @@
 /* Large devices (large desktops, 1200px and up) */
 
 .birdhouse {
-  .row {
+  .row, .r {
     
     /* Small devices (mobile) */
     @media #{$birdhouse-breakpoint-xtra-small} {
