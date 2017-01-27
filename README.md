@@ -82,7 +82,7 @@ In addition, all column classes have an alias to allow for rapid creation of HTM
 ```
 <div class="birdhouse">
     <div class="r">
-        <div class="cxsm4">
+        <div class="cxs4">
         </div>
         <div class="csm4">
         </div>
@@ -102,7 +102,7 @@ You can combine classes to generate different layouts based on device size.
 ```
 <div class="birdhouse">
     <div class="row">
-        <div class="cxsm2 clg12">
+        <div class="cxs2 clg12">
         </div>
         <div class="csm1 clg1">
         </div>
