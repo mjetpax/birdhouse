@@ -118,7 +118,7 @@ By default, there are no gutters defined for Birdcage. This provides maximum fle
 ```
 [class*="columns-"], 
 [class*="clz"], 
-[class*="csx"], 
+[class*="cxs"], 
 [class*="csm"], 
 [class*="cmd"],
 [class*="clg"], 
