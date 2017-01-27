@@ -47,7 +47,10 @@
   flex-wrap: wrap;
 }
 
-[class*='columns-'], .csx, .csm, .cmd, .clg, .cxl {
+[class*='columns-'], [class*='clz'], 
+[class*='csx'], [class*='csm'], 
+[class*='cmd'], [class*='clg'], 
+[class*='cxl'] {
   -ms-flex-positive: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -64,8 +67,149 @@
 /* Large devices (large desktops, 1200px and up) */
 
 .birdhouse {
-  .row, .r {
+  .row {
     
+    /* Small devices (mobile) */
+    @media #{$birdhouse-breakpoint-xtra-small} {
+
+      /* lazy */
+      @for $i from 1 through $birdhouse-columns {
+
+        .columns-lazy-#{$i}, .clz#{$i} {
+            flex-basis: 100%;
+        }
+      }
+
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-xsmall-#{$i}, .cxs#{$i}  { 
+            flex-basis: $basis;
+        }
+      }
+    }
+
+    /* Small devices (mobile) */
+    @media #{$birdhouse-breakpoint-small} {
+
+      /* lazy */
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i * 4;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-lazy-#{$i}, .clz#{$i} {
+            flex-basis: $basis;
+        }
+      }
+
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-small-#{$i}, .csm#{$i} { 
+            flex-basis: $basis;
+        }
+      }
+    }
+
+    /* Medium devices (desktops) */
+    @media #{$birdhouse-breakpoint-medium} {
+      
+      /* lazy */
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i * 2;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-lazy-#{$i}, .clz#{$i} {
+            flex-basis: $basis;
+        }
+      }
+
+      /* by suffix assignment */
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-medium-#{$i}, .cmd#{$i} { 
+            flex-basis: $basis;
+        }
+      }
+    }
+
+    @media #{$birdhouse-breakpoint-large} {
+
+      /* lazy */
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-lazy-#{$i}, .clz#{$i} {
+            flex-basis: $basis;
+        }
+      }
+
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-large-#{$i}, .clg#{$i} { 
+            flex-basis: $basis;
+        }
+      }
+    }
+
+    @media #{$birdhouse-breakpoint-xtra-large} {
+
+      /* lazy */
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-lazy-#{$i}, .clz#{$i} {
+            flex-basis: $basis;
+        }
+      }
+
+      @for $i from 1 through $birdhouse-columns {
+
+        $basis: 100% / $birdhouse-columns * $i;
+        @if ($basis > 100) {
+          $basis: 100%;
+        }
+
+        .columns-xlarge-#{$i}, .cxl#{$i} { 
+            flex-basis: $basis;
+        }
+      }
+    }
+  }
+
+  .r {
     /* Small devices (mobile) */
     @media #{$birdhouse-breakpoint-xtra-small} {
 
