@@ -50,7 +50,7 @@
 }
 
 .birdhouse .row [class*='columns-'], .birdhouse .row [class*='clz'],
-.birdhouse .row [class*='csx'], .birdhouse .row [class*='csm'],
+.birdhouse .row [class*='cxs'], .birdhouse .row [class*='csm'],
 .birdhouse .row [class*='cmd'], .birdhouse .row [class*='clg'],
 .birdhouse .row [class*='cxl'] {
   -ms-flex-positive: 1;
@@ -65,7 +65,7 @@
   display: inline-flex;
 }
 .birdhouse .r [class*='columns-'], .birdhouse .r [class*='clz'],
-.birdhouse .r [class*='csx'], .birdhouse .r [class*='csm'],
+.birdhouse .r [class*='cxs'], .birdhouse .r [class*='csm'],
 .birdhouse .r [class*='cmd'], .birdhouse .r [class*='clg'],
 .birdhouse .r [class*='cxl'] {
   -ms-flex-positive: 1;
