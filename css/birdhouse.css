@@ -58,6 +58,7 @@
   -ms-flex-preferred-size: 100%;
   -webkit-flex-basis: 100%;
   flex-basis: 100%;
+  display: inline-flex;
 }
 
 /* Small devices (tablets, 768px and up) */
