@@ -92,10 +92,9 @@
 .birdhouse {
   .row {
     
-    /* Small devices (mobile) */
+    /* Xtra small devices (mobile) */
     @media #{$birdhouse-breakpoint-xtra-small} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         .columns-lazy-#{$i}, .clz#{$i} {
@@ -119,7 +118,6 @@
     /* Small devices (mobile) */
     @media #{$birdhouse-breakpoint-small} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i * 4;
@@ -148,7 +146,6 @@
     /* Medium devices (desktops) */
     @media #{$birdhouse-breakpoint-medium} {
       
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i * 2;
@@ -161,7 +158,6 @@
         }
       }
 
-      /* by suffix assignment */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i;
@@ -175,9 +171,9 @@
       }
     }
 
+    /* Large devices */    
     @media #{$birdhouse-breakpoint-large} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i;
@@ -203,9 +199,9 @@
       }
     }
 
+    /* Xtra large devices */
     @media #{$birdhouse-breakpoint-xtra-large} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i;
@@ -233,10 +229,9 @@
   }
 
   .r {
-    /* Small devices (mobile) */
+    /* Xtra small devices (mobile) */
     @media #{$birdhouse-breakpoint-xtra-small} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         .columns-lazy-#{$i}, .clz#{$i} {
@@ -260,7 +255,6 @@
     /* Small devices (mobile) */
     @media #{$birdhouse-breakpoint-small} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i * 4;
@@ -289,7 +283,6 @@
     /* Medium devices (desktops) */
     @media #{$birdhouse-breakpoint-medium} {
       
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i * 2;
@@ -302,7 +295,6 @@
         }
       }
 
-      /* by suffix assignment */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i;
@@ -316,9 +308,9 @@
       }
     }
 
+    /* Large devices */    
     @media #{$birdhouse-breakpoint-large} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i;
@@ -344,9 +336,9 @@
       }
     }
 
+    /* Xtra large devices */
     @media #{$birdhouse-breakpoint-xtra-large} {
 
-      /* lazy */
       @for $i from 1 through $birdhouse-columns {
 
         $basis: 100% / $birdhouse-columns * $i;

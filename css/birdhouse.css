@@ -80,14 +80,13 @@
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 .birdhouse .row {
-  /* Small devices (mobile) */
+  /* Xtra small devices (mobile) */
   /* Small devices (mobile) */
   /* Medium devices (desktops) */
+  /* Large devices */
+  /* Xtra large devices */
 }
 @media only screen {
-  .birdhouse .row {
-    /* lazy */
-  }
   .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
     flex-basis: 100%;
   }
@@ -162,9 +161,6 @@
   }
 }
 @media only screen and (min-width: 40em) {
-  .birdhouse .row {
-    /* lazy */
-  }
   .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
     flex-basis: 33.33333%;
   }
@@ -239,10 +235,6 @@
   }
 }
 @media only screen and (min-width: 50em) {
-  .birdhouse .row {
-    /* lazy */
-    /* by suffix assignment */
-  }
   .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
     flex-basis: 16.66667%;
   }
@@ -317,9 +309,6 @@
   }
 }
 @media only screen and (min-width: 75em) {
-  .birdhouse .row {
-    /* lazy */
-  }
   .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
     flex-basis: 8.33333%;
   }
@@ -394,9 +383,6 @@
   }
 }
 @media only screen and (min-width: 120em) {
-  .birdhouse .row {
-    /* lazy */
-  }
   .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
     flex-basis: 8.33333%;
   }
@@ -471,14 +457,13 @@
   }
 }
 .birdhouse .r {
-  /* Small devices (mobile) */
+  /* Xtra small devices (mobile) */
   /* Small devices (mobile) */
   /* Medium devices (desktops) */
+  /* Large devices */
+  /* Xtra large devices */
 }
 @media only screen {
-  .birdhouse .r {
-    /* lazy */
-  }
   .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 100%;
   }
@@ -553,9 +538,6 @@
   }
 }
 @media only screen and (min-width: 40em) {
-  .birdhouse .r {
-    /* lazy */
-  }
   .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 33.33333%;
   }
@@ -630,10 +612,6 @@
   }
 }
 @media only screen and (min-width: 50em) {
-  .birdhouse .r {
-    /* lazy */
-    /* by suffix assignment */
-  }
   .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 16.66667%;
   }
@@ -708,9 +686,6 @@
   }
 }
 @media only screen and (min-width: 75em) {
-  .birdhouse .r {
-    /* lazy */
-  }
   .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 8.33333%;
   }
@@ -785,9 +760,6 @@
   }
 }
 @media only screen and (min-width: 120em) {
-  .birdhouse .r {
-    /* lazy */
-  }
   .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 8.33333%;
   }
