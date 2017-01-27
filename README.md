@@ -109,3 +109,21 @@ You can combine classes to generate different layouts based on device size.
     </div>
 </div>
 ```
+
+### Grid Gutters
+
+By default, there are no gutters defined for Birdcage. This provides maximum flexibility to designers and developers. There is no need to wrestle with altering preset values. Gutters are simple enough to define in your custom style.css file. Simply add a definiiton like the following CSS example.
+
+#### Example CSS
+```
+[class*="columns-"], 
+[class*="clz"], 
+[class*="csx"], 
+[class*="csm"], 
+[class*="cmd"],
+[class*="clg"], 
+[class*="cxl"] {
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+}
+```
