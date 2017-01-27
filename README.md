@@ -1,6 +1,7 @@
 # Birdhouse
 A super light weight CSS flexbox responsive grid
 
+* Mobile first design
 * HTML5
 * CSS3
 * SASS
@@ -21,8 +22,6 @@ All column sizes have standard column class names, with the prefix columns. Then
 * columns-xlarge-1
 * columns-lazy-1
 
-Lazy columns let the browser control various aspects of column management. Making it quick and easy to set up a responsive grid where design is less of a concern.
-
 #### Example usage
 ```
 <div class="birdhouse">
@@ -34,6 +33,34 @@ Lazy columns let the browser control various aspects of column management. Makin
         <div class="columns-small-4">
         </div>
         <div class="columns-small-4">
+        </div>
+    </div>
+</div>
+```
+
+### Lazy Columns
+
+Lazy columns let the browser control various aspects of column management. Lazy columns wrap to the next line as the display area gets smaller. Lazy columnns automatically choose how many columns will be displayed per row, based on the size of the device screen. You can specify any number of colums per row and lazy columns will automatically decide how to break the columns up across x number of rows. This automated behavior makes it quick and easy to set up a responsive grid where strict column positioning is less of a concern.
+
+#### Example usage
+```
+<div class="birdhouse">
+    <div class="row">
+        <div class="columns-lazy-4">
+        </div>
+        <div class="columns-lazy-4">
+        </div>
+        <div class="columns-lazy-4">
+        </div>
+        <div class="columns-lazy-4">
+        </div>
+        <div class="columns-lazy-4">
+        </div>
+        <div class="columns-lazy-4">
+        </div>
+        <div class="columns-lazy-4">
+        </div>
+        <div class="columns-lazy-4">
         </div>
     </div>
 </div>
