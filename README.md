@@ -1,5 +1,5 @@
 # Birdhouse
-A super light weight CSS flexbox responsive grid
+A super light weight no conflict CSS flexbox responsive grid.
 
 * Mobile first design
 * HTML5

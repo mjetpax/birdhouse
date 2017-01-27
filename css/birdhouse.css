@@ -20,7 +20,7 @@
   margin: 0 auto;
 }
 
-.birdhouse.fluid {
+.birdhouse .fluid {
   width: 100%;
   max-width: 100%;
 }
@@ -31,7 +31,7 @@
   box-sizing: border-box;
 }
 
-.row, .r {
+.birdhouse .row, .birdhouse .r {
   padding: 0;
   margin: 0;
   display: -ms-flexbox;
@@ -45,10 +45,25 @@
   flex-wrap: wrap;
 }
 
-[class*='columns-'], [class*='clz'],
-[class*='csx'], [class*='csm'],
-[class*='cmd'], [class*='clg'],
-[class*='cxl'] {
+.birdhouse .row [class*='columns-'], .birdhouse .row [class*='clz'],
+.birdhouse .row [class*='csx'], .birdhouse .row [class*='csm'],
+.birdhouse .row [class*='cmd'], .birdhouse .row [class*='clg'],
+.birdhouse .row [class*='cxl'] {
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  -ms-flex-preferred-size: 100%;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  display: inline-flex;
+}
+.birdhouse .r [class*='columns-'], .birdhouse .r [class*='clz'],
+.birdhouse .r [class*='csx'], .birdhouse .r [class*='csm'],
+.birdhouse .r [class*='cmd'], .birdhouse .r [class*='clg'],
+.birdhouse .r [class*='cxl'] {
   -ms-flex-positive: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
