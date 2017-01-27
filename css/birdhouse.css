@@ -13,6 +13,7 @@
  * Distributed under the MIT License
  * http://opensource.org/licenses/MIT
  *
+ * Version 1.2.1-dev
  */
 .birdhouse {
   width: 100%;
@@ -20,7 +21,7 @@
   margin: 0 auto;
 }
 
-.birdhouse .fluid {
+.birdhouse.fluid {
   width: 100%;
   max-width: 100%;
 }
@@ -31,7 +32,7 @@
   box-sizing: border-box;
 }
 
-.birdhouse .row, .birdhouse .r {
+.birdhouse .row, .r {
   padding: 0;
   margin: 0;
   display: -ms-flexbox;
@@ -43,6 +44,9 @@
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-preferred-size: 100%;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .birdhouse .row [class*='columns-'], .birdhouse .row [class*='clz'],
