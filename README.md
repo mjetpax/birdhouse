@@ -11,7 +11,7 @@ Demo: http://mjetpax.github.io/birdhouse/
 
 ## The Grid and Column Classes
 
-By default Birdhouse uses a 16 column grid. This can be easily adjusted in the _variables.scss file, but does require a recompile. Additionally, birdhouse supports both fluid and fixed width layouts. Use .birdhouse for fixed width and .birdhouse .fluid for fluid layouts.
+By default Birdhouse uses a 12 column grid system. This can be easily adjusted in the _variables.scss file, but does require a recompile. Additionally, birdhouse supports both fluid and fixed width layouts. Use .birdhouse for fixed width and .birdhouse .fluid for fluid layouts.
 
 All column sizes have standard column class names, with the prefix columns. Then the breakpoint size of the column, followed by the number of columns wide.
 
@@ -32,7 +32,31 @@ All column sizes have standard column class names, with the prefix columns. Then
         </div>
         <div class="columns-small-4">
         </div>
-        <div class="columns-small-4">
+    </div>
+</div>
+```
+
+### Class Aliases
+
+In addition, all column classes have an alias to allow for rapid creation of HTML and lessening the amount of typing needed to utilize the Birdhouse classes. The .row class also has a .r alias that can be used.
+
+* r
+* cxs1
+* csm1
+* cmd1
+* clg1
+* cxl1
+* clz1 
+
+#### Example usage
+```
+<div class="birdhouse">
+    <div class="r">
+        <div class="cxs4">
+        </div>
+        <div class="csm4">
+        </div>
+        <div class="csm4">
         </div>
     </div>
 </div>
@@ -66,34 +90,6 @@ Lazy columns let the browser control various aspects of column management. Lazy 
 </div>
 ```
 
-### Class Aliases
-
-In addition, all column classes have an alias to allow for rapid creation of HTML and lessening the amount of typing needed to utilize the Birdhouse classes. The .row class also has a .r alias that can be used.
-
-* r
-* cxs1
-* csm1
-* cmd1
-* clg1
-* cxl1
-* clz1 
-
-#### Example usage
-```
-<div class="birdhouse">
-    <div class="r">
-        <div class="cxs4">
-        </div>
-        <div class="csm4">
-        </div>
-        <div class="csm4">
-        </div>
-        <div class="csm4">
-        </div>
-    </div>
-</div>
-```
-
 ### Combining Classes
 
 You can combine classes to generate different layouts based on device size.
@@ -101,14 +97,14 @@ You can combine classes to generate different layouts based on device size.
 #### Example usage
 ```
 <div class="birdhouse">
-    <div class="row">
-        <div class="cxs2 clg12">
+    <div class="r">
+        <div class="cxs2 clg8">
         </div>
         <div class="csm1 clg1">
         </div>
         <div class="csm1 clg1">
         </div>
-        <div class="csm12 clg2">
+        <div class="csm8 clg2">
         </div>
     </div>
 </div>
