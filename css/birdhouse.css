@@ -102,23 +102,23 @@
 }
 
 /* Show when media reached x breakpoint */
-.show-xsmall, .shw-xs {
+.show-xsmall, .sh-xs {
   display: none;
 }
 
-.show-small, .shw-sm {
+.show-small, .sh-sm {
   display: none;
 }
 
-.show-medium, .shw-md {
+.show-medium, .sh-md {
   display: none;
 }
 
-.show-large, .shw-lg {
+.show-large, .sh-lg {
   display: none;
 }
 
-.show-xlarge, .shw-xl {
+.show-xlarge, .sh-xl {
   display: none;
 }
 
