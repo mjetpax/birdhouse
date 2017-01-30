@@ -153,3 +153,32 @@ By default, there are no gutters defined for Birdcage. This provides maximum fle
     padding-bottom: .5rem;
 }
 ```
+
+### Hide/Show Elements
+
+Birdhouse allows you to hide and show elements at specific breakpoints using the following classes.
+
+#### Hide at x breakpoint
+
+* .hide-xsmall, .hd-xs
+* .hide-small, .hd-sm
+* .hide-medium, .hd-md
+* .hide-large, .hd-lg
+* .hide-xlarge, .hd-xl
+
+#### Show at x breakpoint
+
+* .show-xsmall, .shw-xs
+* .show-small, .shw-sm
+* .show-medium, .shw-md
+* .show-large, .shw-lg
+* .show-xlarge, .shw-xl
+
+##### Example usage
+```
+<div class="birdhouse">
+    <div class="hide-medium">
+        <p>This is only shown to mobile devices.</p>
+    </div>
+</div>
+```

@@ -13,7 +13,7 @@
  * Distributed under the MIT License
  * http://opensource.org/licenses/MIT
  *
- * Version 0.7.2
+ * Version 0.7.3-dev
  */
 
 @import "_variables";
@@ -89,282 +89,135 @@
   }
 }
 
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
+/* Hide when media reached x breakpoint */
+.hide-xsmall, .hd-xs { display: block; }
+.hide-small, .hd-sm { display: block; }
+.hide-medium, .hd-md { display: block; }
+.hide-large, .hd-lg { display: block; }
+.hide-xlarge, .hd-xl { display: block; }
+
+/* Show when media reached x breakpoint */
+.show-xsmall, .shw-xs { display: none; }
+.show-small, .shw-sm { display: none; }
+.show-medium, .shw-md { display: none; }
+.show-large, .shw-lg { display: none; }
+.show-xlarge, .shw-xl { display: none; }
 
 .birdhouse {
-  .row {
-    
-    /* Xtra small devices (mobile) */
-    @media #{$birdhouse-breakpoint-xtra-small} {
 
-      @for $i from 1 through $birdhouse-columns {
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: 100%;
-        }
-      }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-xsmall-#{$i}, .cxs#{$i}  { 
-            flex-basis: $basis;
-        }
+  /* Xtra small devices (mobile) */
+  @media #{$birdhouse-breakpoint-xtra-small} {
+    .hide-xsmall, .hd-xs { display: none; }
+    .show-xsmall, .sh-xs { display: block; }
+    @for $i from 1 through $birdhouse-columns {
+      .row .columns-lazy-#{$i}, .row .clz#{$i}, .r .columns-lazy-#{$i}, .r .clz#{$i} {
+          flex-basis: 100%;
       }
     }
-
-    /* Small devices (mobile) */
-    @media #{$birdhouse-breakpoint-small} {
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i * 4;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i;
+      @if ($basis > 100) {
+        $basis: 100%;
       }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-small-#{$i}, .csm#{$i} { 
-            flex-basis: $basis;
-        }
-      }
-    }
-
-    /* Medium devices (desktops) */
-    @media #{$birdhouse-breakpoint-medium} {
-      
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i * 2;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
-      }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-medium-#{$i}, .cmd#{$i} { 
-            flex-basis: $basis;
-        }
-      }
-    }
-
-    /* Large devices */    
-    @media #{$birdhouse-breakpoint-large} {
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
-      }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-large-#{$i}, .clg#{$i} { 
-            flex-basis: $basis;
-        }
-      }
-    }
-
-    /* Xtra large devices */
-    @media #{$birdhouse-breakpoint-xtra-large} {
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
-      }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-xlarge-#{$i}, .cxl#{$i} { 
-            flex-basis: $basis;
-        }
+      .row .columns-xsmall-#{$i}, .row .cxs#{$i}, .r .columns-xsmall-#{$i}, .r .cxs#{$i}  { 
+          flex-basis: $basis;
       }
     }
   }
 
-  .r {
-    /* Xtra small devices (mobile) */
-    @media #{$birdhouse-breakpoint-xtra-small} {
-
-      @for $i from 1 through $birdhouse-columns {
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: 100%;
-        }
+  /* Small devices (mobile) */
+  @media #{$birdhouse-breakpoint-small} {
+    .hide-small, .hd-sm { display: none; }
+    .show-small, .sh-sm { display: block; }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i * 4;
+      @if ($basis > 100) {
+        $basis: 100%;
       }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-xsmall-#{$i}, .cxs#{$i}  { 
-            flex-basis: $basis;
-        }
+      .row .columns-lazy-#{$i}, .row .clz#{$i}, .r .columns-lazy-#{$i}, .r .clz#{$i} {
+          flex-basis: $basis;
       }
     }
 
-    /* Small devices (mobile) */
-    @media #{$birdhouse-breakpoint-small} {
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i * 4;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i;
+      @if ($basis > 100) {
+        $basis: 100%;
       }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-small-#{$i}, .csm#{$i} { 
-            flex-basis: $basis;
-        }
+      .row .columns-small-#{$i}, .row .csm#{$i}, .r .columns-small-#{$i}, .r .csm#{$i} { 
+          flex-basis: $basis;
       }
     }
+  }
 
-    /* Medium devices (desktops) */
-    @media #{$birdhouse-breakpoint-medium} {
-      
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i * 2;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
+  /* Medium devices (desktops) */
+  @media #{$birdhouse-breakpoint-medium} {
+    .hide-medium, .hd-md { display: none; }
+    .show-medium, .sh-md { display: block; }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i * 2;
+      @if ($basis > 100) {
+        $basis: 100%;
       }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-medium-#{$i}, .cmd#{$i} { 
-            flex-basis: $basis;
-        }
+      .row .columns-lazy-#{$i}, .row .clz#{$i}, .r .columns-lazy-#{$i}, .r .clz#{$i} {
+          flex-basis: $basis;
       }
     }
-
-    /* Large devices */    
-    @media #{$birdhouse-breakpoint-large} {
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i;
+      @if ($basis > 100) {
+        $basis: 100%;
       }
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-large-#{$i}, .clg#{$i} { 
-            flex-basis: $basis;
-        }
+      .row .columns-medium-#{$i}, .row .cmd#{$i}, .r .columns-medium-#{$i}, .r .cmd#{$i} { 
+          flex-basis: $basis;
       }
     }
+  }
 
-    /* Xtra large devices */
-    @media #{$birdhouse-breakpoint-xtra-large} {
-
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-lazy-#{$i}, .clz#{$i} {
-            flex-basis: $basis;
-        }
+  /* Large devices */    
+  @media #{$birdhouse-breakpoint-large} {
+    .hide-large, .hd-lg { display: none; }
+    .show-large, .sh-lg { display: block; }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i;
+      @if ($basis > 100) {
+        $basis: 100%;
       }
+      .row .columns-lazy-#{$i}, .row .clz#{$i}, .r .columns-lazy-#{$i}, .r .clz#{$i} {
+          flex-basis: $basis;
+      }
+    }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i;
+      @if ($basis > 100) {
+        $basis: 100%;
+      }
+      .row .columns-large-#{$i}, .row .clg#{$i}, .r .columns-large-#{$i}, .r .clg#{$i} { 
+          flex-basis: $basis;
+      }
+    }
+  }
 
-      @for $i from 1 through $birdhouse-columns {
-
-        $basis: 100% / $birdhouse-columns * $i;
-        @if ($basis > 100) {
-          $basis: 100%;
-        }
-
-        .columns-xlarge-#{$i}, .cxl#{$i} { 
-            flex-basis: $basis;
-        }
+  /* Xtra large devices */
+  @media #{$birdhouse-breakpoint-xtra-large} {
+    .hide-xlarge, .hd-xl { display: none; }
+    .show-xlarge, .sh-xl { display: block; }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i;
+      @if ($basis > 100) {
+        $basis: 100%;
+      }
+      .row .columns-lazy-#{$i}, .row .clz#{$i}, .r .columns-lazy-#{$i}, .r .clz#{$i} {
+          flex-basis: $basis;
+      }
+    }
+    @for $i from 1 through $birdhouse-columns {
+      $basis: 100% / $birdhouse-columns * $i;
+      @if ($basis > 100) {
+        $basis: 100%;
+      }
+      .row .columns-xlarge-#{$i}, .row .cxl#{$i}, .r .columns-xlarge-#{$i}, .r .cxl#{$i} { 
+          flex-basis: $basis;
       }
     }
   }

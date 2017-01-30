@@ -13,11 +13,11 @@
  * Distributed under the MIT License
  * http://opensource.org/licenses/MIT
  *
- * Version 0.7.2
+ * Version 0.7.3-dev
  */
 .birdhouse {
   width: 100%;
-  max-width: 100em;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -80,10 +80,49 @@
   display: inline-flex;
 }
 
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
-.birdhouse .row {
+/* Hide when media reached x breakpoint */
+.hide-xsmall, .hd-xs {
+  display: block;
+}
+
+.hide-small, .hd-sm {
+  display: block;
+}
+
+.hide-medium, .hd-md {
+  display: block;
+}
+
+.hide-large, .hd-lg {
+  display: block;
+}
+
+.hide-xlarge, .hd-xl {
+  display: block;
+}
+
+/* Show when media reached x breakpoint */
+.show-xsmall, .shw-xs {
+  display: none;
+}
+
+.show-small, .shw-sm {
+  display: none;
+}
+
+.show-medium, .shw-md {
+  display: none;
+}
+
+.show-large, .shw-lg {
+  display: none;
+}
+
+.show-xlarge, .shw-xl {
+  display: none;
+}
+
+.birdhouse {
   /* Xtra small devices (mobile) */
   /* Small devices (mobile) */
   /* Medium devices (desktops) */
@@ -91,749 +130,414 @@
   /* Xtra large devices */
 }
 @media only screen {
-  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
+  .birdhouse .hide-xsmall, .birdhouse .hd-xs {
+    display: none;
+  }
+  .birdhouse .show-xsmall, .birdhouse .sh-xs {
+    display: block;
+  }
+  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1,
+  .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2 {
+  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2,
+  .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3 {
+  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3,
+  .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4 {
+  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4,
+  .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5 {
+  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5,
+  .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6 {
+  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6,
+  .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7 {
+  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7,
+  .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8 {
+  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8,
+  .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9 {
+  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9,
+  .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10 {
+  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10,
+  .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11 {
+  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11,
+  .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12 {
+  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12,
+  .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-xsmall-1, .birdhouse .row .cxs1 {
+  .birdhouse .row .columns-xsmall-1, .birdhouse .row .cxs1, .birdhouse .r .columns-xsmall-1, .birdhouse .r .cxs1 {
     flex-basis: 8.33333%;
   }
-  .birdhouse .row .columns-xsmall-2, .birdhouse .row .cxs2 {
+  .birdhouse .row .columns-xsmall-2, .birdhouse .row .cxs2, .birdhouse .r .columns-xsmall-2, .birdhouse .r .cxs2 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-xsmall-3, .birdhouse .row .cxs3 {
+  .birdhouse .row .columns-xsmall-3, .birdhouse .row .cxs3, .birdhouse .r .columns-xsmall-3, .birdhouse .r .cxs3 {
     flex-basis: 25%;
   }
-  .birdhouse .row .columns-xsmall-4, .birdhouse .row .cxs4 {
+  .birdhouse .row .columns-xsmall-4, .birdhouse .row .cxs4, .birdhouse .r .columns-xsmall-4, .birdhouse .r .cxs4 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-xsmall-5, .birdhouse .row .cxs5 {
+  .birdhouse .row .columns-xsmall-5, .birdhouse .row .cxs5, .birdhouse .r .columns-xsmall-5, .birdhouse .r .cxs5 {
     flex-basis: 41.66667%;
   }
-  .birdhouse .row .columns-xsmall-6, .birdhouse .row .cxs6 {
+  .birdhouse .row .columns-xsmall-6, .birdhouse .row .cxs6, .birdhouse .r .columns-xsmall-6, .birdhouse .r .cxs6 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-xsmall-7, .birdhouse .row .cxs7 {
+  .birdhouse .row .columns-xsmall-7, .birdhouse .row .cxs7, .birdhouse .r .columns-xsmall-7, .birdhouse .r .cxs7 {
     flex-basis: 58.33333%;
   }
-  .birdhouse .row .columns-xsmall-8, .birdhouse .row .cxs8 {
+  .birdhouse .row .columns-xsmall-8, .birdhouse .row .cxs8, .birdhouse .r .columns-xsmall-8, .birdhouse .r .cxs8 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-xsmall-9, .birdhouse .row .cxs9 {
+  .birdhouse .row .columns-xsmall-9, .birdhouse .row .cxs9, .birdhouse .r .columns-xsmall-9, .birdhouse .r .cxs9 {
     flex-basis: 75%;
   }
-  .birdhouse .row .columns-xsmall-10, .birdhouse .row .cxs10 {
+  .birdhouse .row .columns-xsmall-10, .birdhouse .row .cxs10, .birdhouse .r .columns-xsmall-10, .birdhouse .r .cxs10 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-xsmall-11, .birdhouse .row .cxs11 {
+  .birdhouse .row .columns-xsmall-11, .birdhouse .row .cxs11, .birdhouse .r .columns-xsmall-11, .birdhouse .r .cxs11 {
     flex-basis: 91.66667%;
   }
-  .birdhouse .row .columns-xsmall-12, .birdhouse .row .cxs12 {
+  .birdhouse .row .columns-xsmall-12, .birdhouse .row .cxs12, .birdhouse .r .columns-xsmall-12, .birdhouse .r .cxs12 {
     flex-basis: 100%;
   }
 }
 @media only screen and (min-width: 40rem) {
-  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
+  .birdhouse .hide-small, .birdhouse .hd-sm {
+    display: none;
+  }
+  .birdhouse .show-small, .birdhouse .sh-sm {
+    display: block;
+  }
+  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1, .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2 {
+  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2, .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3 {
+  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3, .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4 {
+  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4, .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5 {
+  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5, .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6 {
+  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6, .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7 {
+  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7, .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8 {
+  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8, .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9 {
+  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9, .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10 {
+  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10, .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11 {
+  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11, .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12 {
+  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12, .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-small-1, .birdhouse .row .csm1 {
+  .birdhouse .row .columns-small-1, .birdhouse .row .csm1, .birdhouse .r .columns-small-1, .birdhouse .r .csm1 {
     flex-basis: 8.33333%;
   }
-  .birdhouse .row .columns-small-2, .birdhouse .row .csm2 {
+  .birdhouse .row .columns-small-2, .birdhouse .row .csm2, .birdhouse .r .columns-small-2, .birdhouse .r .csm2 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-small-3, .birdhouse .row .csm3 {
+  .birdhouse .row .columns-small-3, .birdhouse .row .csm3, .birdhouse .r .columns-small-3, .birdhouse .r .csm3 {
     flex-basis: 25%;
   }
-  .birdhouse .row .columns-small-4, .birdhouse .row .csm4 {
+  .birdhouse .row .columns-small-4, .birdhouse .row .csm4, .birdhouse .r .columns-small-4, .birdhouse .r .csm4 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-small-5, .birdhouse .row .csm5 {
+  .birdhouse .row .columns-small-5, .birdhouse .row .csm5, .birdhouse .r .columns-small-5, .birdhouse .r .csm5 {
     flex-basis: 41.66667%;
   }
-  .birdhouse .row .columns-small-6, .birdhouse .row .csm6 {
+  .birdhouse .row .columns-small-6, .birdhouse .row .csm6, .birdhouse .r .columns-small-6, .birdhouse .r .csm6 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-small-7, .birdhouse .row .csm7 {
+  .birdhouse .row .columns-small-7, .birdhouse .row .csm7, .birdhouse .r .columns-small-7, .birdhouse .r .csm7 {
     flex-basis: 58.33333%;
   }
-  .birdhouse .row .columns-small-8, .birdhouse .row .csm8 {
+  .birdhouse .row .columns-small-8, .birdhouse .row .csm8, .birdhouse .r .columns-small-8, .birdhouse .r .csm8 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-small-9, .birdhouse .row .csm9 {
+  .birdhouse .row .columns-small-9, .birdhouse .row .csm9, .birdhouse .r .columns-small-9, .birdhouse .r .csm9 {
     flex-basis: 75%;
   }
-  .birdhouse .row .columns-small-10, .birdhouse .row .csm10 {
+  .birdhouse .row .columns-small-10, .birdhouse .row .csm10, .birdhouse .r .columns-small-10, .birdhouse .r .csm10 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-small-11, .birdhouse .row .csm11 {
+  .birdhouse .row .columns-small-11, .birdhouse .row .csm11, .birdhouse .r .columns-small-11, .birdhouse .r .csm11 {
     flex-basis: 91.66667%;
   }
-  .birdhouse .row .columns-small-12, .birdhouse .row .csm12 {
+  .birdhouse .row .columns-small-12, .birdhouse .row .csm12, .birdhouse .r .columns-small-12, .birdhouse .r .csm12 {
     flex-basis: 100%;
   }
 }
 @media only screen and (min-width: 50rem) {
-  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
+  .birdhouse .hide-medium, .birdhouse .hd-md {
+    display: none;
+  }
+  .birdhouse .show-medium, .birdhouse .sh-md {
+    display: block;
+  }
+  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1, .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2 {
+  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2, .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3 {
+  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3, .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4 {
+  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4, .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5 {
+  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5, .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6 {
+  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6, .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7 {
+  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7, .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8 {
+  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8, .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9 {
+  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9, .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10 {
+  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10, .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11 {
+  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11, .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12 {
+  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12, .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-medium-1, .birdhouse .row .cmd1 {
+  .birdhouse .row .columns-medium-1, .birdhouse .row .cmd1, .birdhouse .r .columns-medium-1, .birdhouse .r .cmd1 {
     flex-basis: 8.33333%;
   }
-  .birdhouse .row .columns-medium-2, .birdhouse .row .cmd2 {
+  .birdhouse .row .columns-medium-2, .birdhouse .row .cmd2, .birdhouse .r .columns-medium-2, .birdhouse .r .cmd2 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-medium-3, .birdhouse .row .cmd3 {
+  .birdhouse .row .columns-medium-3, .birdhouse .row .cmd3, .birdhouse .r .columns-medium-3, .birdhouse .r .cmd3 {
     flex-basis: 25%;
   }
-  .birdhouse .row .columns-medium-4, .birdhouse .row .cmd4 {
+  .birdhouse .row .columns-medium-4, .birdhouse .row .cmd4, .birdhouse .r .columns-medium-4, .birdhouse .r .cmd4 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-medium-5, .birdhouse .row .cmd5 {
+  .birdhouse .row .columns-medium-5, .birdhouse .row .cmd5, .birdhouse .r .columns-medium-5, .birdhouse .r .cmd5 {
     flex-basis: 41.66667%;
   }
-  .birdhouse .row .columns-medium-6, .birdhouse .row .cmd6 {
+  .birdhouse .row .columns-medium-6, .birdhouse .row .cmd6, .birdhouse .r .columns-medium-6, .birdhouse .r .cmd6 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-medium-7, .birdhouse .row .cmd7 {
+  .birdhouse .row .columns-medium-7, .birdhouse .row .cmd7, .birdhouse .r .columns-medium-7, .birdhouse .r .cmd7 {
     flex-basis: 58.33333%;
   }
-  .birdhouse .row .columns-medium-8, .birdhouse .row .cmd8 {
+  .birdhouse .row .columns-medium-8, .birdhouse .row .cmd8, .birdhouse .r .columns-medium-8, .birdhouse .r .cmd8 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-medium-9, .birdhouse .row .cmd9 {
+  .birdhouse .row .columns-medium-9, .birdhouse .row .cmd9, .birdhouse .r .columns-medium-9, .birdhouse .r .cmd9 {
     flex-basis: 75%;
   }
-  .birdhouse .row .columns-medium-10, .birdhouse .row .cmd10 {
+  .birdhouse .row .columns-medium-10, .birdhouse .row .cmd10, .birdhouse .r .columns-medium-10, .birdhouse .r .cmd10 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-medium-11, .birdhouse .row .cmd11 {
+  .birdhouse .row .columns-medium-11, .birdhouse .row .cmd11, .birdhouse .r .columns-medium-11, .birdhouse .r .cmd11 {
     flex-basis: 91.66667%;
   }
-  .birdhouse .row .columns-medium-12, .birdhouse .row .cmd12 {
+  .birdhouse .row .columns-medium-12, .birdhouse .row .cmd12, .birdhouse .r .columns-medium-12, .birdhouse .r .cmd12 {
     flex-basis: 100%;
   }
 }
 @media only screen and (min-width: 75rem) {
-  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
+  .birdhouse .hide-large, .birdhouse .hd-lg {
+    display: none;
+  }
+  .birdhouse .show-large, .birdhouse .sh-lg {
+    display: block;
+  }
+  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1, .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 8.33333%;
   }
-  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2 {
+  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2, .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3 {
+  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3, .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
     flex-basis: 25%;
   }
-  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4 {
+  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4, .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5 {
+  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5, .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
     flex-basis: 41.66667%;
   }
-  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6 {
+  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6, .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7 {
+  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7, .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
     flex-basis: 58.33333%;
   }
-  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8 {
+  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8, .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9 {
+  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9, .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
     flex-basis: 75%;
   }
-  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10 {
+  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10, .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11 {
+  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11, .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
     flex-basis: 91.66667%;
   }
-  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12 {
+  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12, .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-large-1, .birdhouse .row .clg1 {
+  .birdhouse .row .columns-large-1, .birdhouse .row .clg1, .birdhouse .r .columns-large-1, .birdhouse .r .clg1 {
     flex-basis: 8.33333%;
   }
-  .birdhouse .row .columns-large-2, .birdhouse .row .clg2 {
+  .birdhouse .row .columns-large-2, .birdhouse .row .clg2, .birdhouse .r .columns-large-2, .birdhouse .r .clg2 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-large-3, .birdhouse .row .clg3 {
+  .birdhouse .row .columns-large-3, .birdhouse .row .clg3, .birdhouse .r .columns-large-3, .birdhouse .r .clg3 {
     flex-basis: 25%;
   }
-  .birdhouse .row .columns-large-4, .birdhouse .row .clg4 {
+  .birdhouse .row .columns-large-4, .birdhouse .row .clg4, .birdhouse .r .columns-large-4, .birdhouse .r .clg4 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-large-5, .birdhouse .row .clg5 {
+  .birdhouse .row .columns-large-5, .birdhouse .row .clg5, .birdhouse .r .columns-large-5, .birdhouse .r .clg5 {
     flex-basis: 41.66667%;
   }
-  .birdhouse .row .columns-large-6, .birdhouse .row .clg6 {
+  .birdhouse .row .columns-large-6, .birdhouse .row .clg6, .birdhouse .r .columns-large-6, .birdhouse .r .clg6 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-large-7, .birdhouse .row .clg7 {
+  .birdhouse .row .columns-large-7, .birdhouse .row .clg7, .birdhouse .r .columns-large-7, .birdhouse .r .clg7 {
     flex-basis: 58.33333%;
   }
-  .birdhouse .row .columns-large-8, .birdhouse .row .clg8 {
+  .birdhouse .row .columns-large-8, .birdhouse .row .clg8, .birdhouse .r .columns-large-8, .birdhouse .r .clg8 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-large-9, .birdhouse .row .clg9 {
+  .birdhouse .row .columns-large-9, .birdhouse .row .clg9, .birdhouse .r .columns-large-9, .birdhouse .r .clg9 {
     flex-basis: 75%;
   }
-  .birdhouse .row .columns-large-10, .birdhouse .row .clg10 {
+  .birdhouse .row .columns-large-10, .birdhouse .row .clg10, .birdhouse .r .columns-large-10, .birdhouse .r .clg10 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-large-11, .birdhouse .row .clg11 {
+  .birdhouse .row .columns-large-11, .birdhouse .row .clg11, .birdhouse .r .columns-large-11, .birdhouse .r .clg11 {
     flex-basis: 91.66667%;
   }
-  .birdhouse .row .columns-large-12, .birdhouse .row .clg12 {
+  .birdhouse .row .columns-large-12, .birdhouse .row .clg12, .birdhouse .r .columns-large-12, .birdhouse .r .clg12 {
     flex-basis: 100%;
   }
 }
 @media only screen and (min-width: 120rem) {
-  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1 {
+  .birdhouse .hide-xlarge, .birdhouse .hd-xl {
+    display: none;
+  }
+  .birdhouse .show-xlarge, .birdhouse .sh-xl {
+    display: block;
+  }
+  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1, .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 8.33333%;
   }
-  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2 {
+  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2, .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3 {
+  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3, .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
     flex-basis: 25%;
   }
-  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4 {
+  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4, .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5 {
+  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5, .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
     flex-basis: 41.66667%;
   }
-  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6 {
+  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6, .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7 {
+  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7, .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
     flex-basis: 58.33333%;
   }
-  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8 {
+  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8, .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9 {
+  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9, .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
     flex-basis: 75%;
   }
-  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10 {
+  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10, .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11 {
+  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11, .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
     flex-basis: 91.66667%;
   }
-  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12 {
+  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12, .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-xlarge-1, .birdhouse .row .cxl1 {
+  .birdhouse .row .columns-xlarge-1, .birdhouse .row .cxl1, .birdhouse .r .columns-xlarge-1, .birdhouse .r .cxl1 {
     flex-basis: 8.33333%;
   }
-  .birdhouse .row .columns-xlarge-2, .birdhouse .row .cxl2 {
+  .birdhouse .row .columns-xlarge-2, .birdhouse .row .cxl2, .birdhouse .r .columns-xlarge-2, .birdhouse .r .cxl2 {
     flex-basis: 16.66667%;
   }
-  .birdhouse .row .columns-xlarge-3, .birdhouse .row .cxl3 {
+  .birdhouse .row .columns-xlarge-3, .birdhouse .row .cxl3, .birdhouse .r .columns-xlarge-3, .birdhouse .r .cxl3 {
     flex-basis: 25%;
   }
-  .birdhouse .row .columns-xlarge-4, .birdhouse .row .cxl4 {
+  .birdhouse .row .columns-xlarge-4, .birdhouse .row .cxl4, .birdhouse .r .columns-xlarge-4, .birdhouse .r .cxl4 {
     flex-basis: 33.33333%;
   }
-  .birdhouse .row .columns-xlarge-5, .birdhouse .row .cxl5 {
+  .birdhouse .row .columns-xlarge-5, .birdhouse .row .cxl5, .birdhouse .r .columns-xlarge-5, .birdhouse .r .cxl5 {
     flex-basis: 41.66667%;
   }
-  .birdhouse .row .columns-xlarge-6, .birdhouse .row .cxl6 {
+  .birdhouse .row .columns-xlarge-6, .birdhouse .row .cxl6, .birdhouse .r .columns-xlarge-6, .birdhouse .r .cxl6 {
     flex-basis: 50%;
   }
-  .birdhouse .row .columns-xlarge-7, .birdhouse .row .cxl7 {
+  .birdhouse .row .columns-xlarge-7, .birdhouse .row .cxl7, .birdhouse .r .columns-xlarge-7, .birdhouse .r .cxl7 {
     flex-basis: 58.33333%;
   }
-  .birdhouse .row .columns-xlarge-8, .birdhouse .row .cxl8 {
+  .birdhouse .row .columns-xlarge-8, .birdhouse .row .cxl8, .birdhouse .r .columns-xlarge-8, .birdhouse .r .cxl8 {
     flex-basis: 66.66667%;
   }
-  .birdhouse .row .columns-xlarge-9, .birdhouse .row .cxl9 {
+  .birdhouse .row .columns-xlarge-9, .birdhouse .row .cxl9, .birdhouse .r .columns-xlarge-9, .birdhouse .r .cxl9 {
     flex-basis: 75%;
   }
-  .birdhouse .row .columns-xlarge-10, .birdhouse .row .cxl10 {
+  .birdhouse .row .columns-xlarge-10, .birdhouse .row .cxl10, .birdhouse .r .columns-xlarge-10, .birdhouse .r .cxl10 {
     flex-basis: 83.33333%;
   }
-  .birdhouse .row .columns-xlarge-11, .birdhouse .row .cxl11 {
+  .birdhouse .row .columns-xlarge-11, .birdhouse .row .cxl11, .birdhouse .r .columns-xlarge-11, .birdhouse .r .cxl11 {
     flex-basis: 91.66667%;
   }
-  .birdhouse .row .columns-xlarge-12, .birdhouse .row .cxl12 {
-    flex-basis: 100%;
-  }
-}
-.birdhouse .r {
-  /* Xtra small devices (mobile) */
-  /* Small devices (mobile) */
-  /* Medium devices (desktops) */
-  /* Large devices */
-  /* Xtra large devices */
-}
-@media only screen {
-  .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-xsmall-1, .birdhouse .r .cxs1 {
-    flex-basis: 8.33333%;
-  }
-  .birdhouse .r .columns-xsmall-2, .birdhouse .r .cxs2 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-xsmall-3, .birdhouse .r .cxs3 {
-    flex-basis: 25%;
-  }
-  .birdhouse .r .columns-xsmall-4, .birdhouse .r .cxs4 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-xsmall-5, .birdhouse .r .cxs5 {
-    flex-basis: 41.66667%;
-  }
-  .birdhouse .r .columns-xsmall-6, .birdhouse .r .cxs6 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-xsmall-7, .birdhouse .r .cxs7 {
-    flex-basis: 58.33333%;
-  }
-  .birdhouse .r .columns-xsmall-8, .birdhouse .r .cxs8 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-xsmall-9, .birdhouse .r .cxs9 {
-    flex-basis: 75%;
-  }
-  .birdhouse .r .columns-xsmall-10, .birdhouse .r .cxs10 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-xsmall-11, .birdhouse .r .cxs11 {
-    flex-basis: 91.66667%;
-  }
-  .birdhouse .r .columns-xsmall-12, .birdhouse .r .cxs12 {
-    flex-basis: 100%;
-  }
-}
-@media only screen and (min-width: 40rem) {
-  .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-small-1, .birdhouse .r .csm1 {
-    flex-basis: 8.33333%;
-  }
-  .birdhouse .r .columns-small-2, .birdhouse .r .csm2 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-small-3, .birdhouse .r .csm3 {
-    flex-basis: 25%;
-  }
-  .birdhouse .r .columns-small-4, .birdhouse .r .csm4 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-small-5, .birdhouse .r .csm5 {
-    flex-basis: 41.66667%;
-  }
-  .birdhouse .r .columns-small-6, .birdhouse .r .csm6 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-small-7, .birdhouse .r .csm7 {
-    flex-basis: 58.33333%;
-  }
-  .birdhouse .r .columns-small-8, .birdhouse .r .csm8 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-small-9, .birdhouse .r .csm9 {
-    flex-basis: 75%;
-  }
-  .birdhouse .r .columns-small-10, .birdhouse .r .csm10 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-small-11, .birdhouse .r .csm11 {
-    flex-basis: 91.66667%;
-  }
-  .birdhouse .r .columns-small-12, .birdhouse .r .csm12 {
-    flex-basis: 100%;
-  }
-}
-@media only screen and (min-width: 50rem) {
-  .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-medium-1, .birdhouse .r .cmd1 {
-    flex-basis: 8.33333%;
-  }
-  .birdhouse .r .columns-medium-2, .birdhouse .r .cmd2 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-medium-3, .birdhouse .r .cmd3 {
-    flex-basis: 25%;
-  }
-  .birdhouse .r .columns-medium-4, .birdhouse .r .cmd4 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-medium-5, .birdhouse .r .cmd5 {
-    flex-basis: 41.66667%;
-  }
-  .birdhouse .r .columns-medium-6, .birdhouse .r .cmd6 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-medium-7, .birdhouse .r .cmd7 {
-    flex-basis: 58.33333%;
-  }
-  .birdhouse .r .columns-medium-8, .birdhouse .r .cmd8 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-medium-9, .birdhouse .r .cmd9 {
-    flex-basis: 75%;
-  }
-  .birdhouse .r .columns-medium-10, .birdhouse .r .cmd10 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-medium-11, .birdhouse .r .cmd11 {
-    flex-basis: 91.66667%;
-  }
-  .birdhouse .r .columns-medium-12, .birdhouse .r .cmd12 {
-    flex-basis: 100%;
-  }
-}
-@media only screen and (min-width: 75rem) {
-  .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
-    flex-basis: 8.33333%;
-  }
-  .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
-    flex-basis: 25%;
-  }
-  .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
-    flex-basis: 41.66667%;
-  }
-  .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
-    flex-basis: 58.33333%;
-  }
-  .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
-    flex-basis: 75%;
-  }
-  .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
-    flex-basis: 91.66667%;
-  }
-  .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-large-1, .birdhouse .r .clg1 {
-    flex-basis: 8.33333%;
-  }
-  .birdhouse .r .columns-large-2, .birdhouse .r .clg2 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-large-3, .birdhouse .r .clg3 {
-    flex-basis: 25%;
-  }
-  .birdhouse .r .columns-large-4, .birdhouse .r .clg4 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-large-5, .birdhouse .r .clg5 {
-    flex-basis: 41.66667%;
-  }
-  .birdhouse .r .columns-large-6, .birdhouse .r .clg6 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-large-7, .birdhouse .r .clg7 {
-    flex-basis: 58.33333%;
-  }
-  .birdhouse .r .columns-large-8, .birdhouse .r .clg8 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-large-9, .birdhouse .r .clg9 {
-    flex-basis: 75%;
-  }
-  .birdhouse .r .columns-large-10, .birdhouse .r .clg10 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-large-11, .birdhouse .r .clg11 {
-    flex-basis: 91.66667%;
-  }
-  .birdhouse .r .columns-large-12, .birdhouse .r .clg12 {
-    flex-basis: 100%;
-  }
-}
-@media only screen and (min-width: 120rem) {
-  .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
-    flex-basis: 8.33333%;
-  }
-  .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
-    flex-basis: 25%;
-  }
-  .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
-    flex-basis: 41.66667%;
-  }
-  .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
-    flex-basis: 58.33333%;
-  }
-  .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
-    flex-basis: 75%;
-  }
-  .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
-    flex-basis: 91.66667%;
-  }
-  .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
-    flex-basis: 100%;
-  }
-  .birdhouse .r .columns-xlarge-1, .birdhouse .r .cxl1 {
-    flex-basis: 8.33333%;
-  }
-  .birdhouse .r .columns-xlarge-2, .birdhouse .r .cxl2 {
-    flex-basis: 16.66667%;
-  }
-  .birdhouse .r .columns-xlarge-3, .birdhouse .r .cxl3 {
-    flex-basis: 25%;
-  }
-  .birdhouse .r .columns-xlarge-4, .birdhouse .r .cxl4 {
-    flex-basis: 33.33333%;
-  }
-  .birdhouse .r .columns-xlarge-5, .birdhouse .r .cxl5 {
-    flex-basis: 41.66667%;
-  }
-  .birdhouse .r .columns-xlarge-6, .birdhouse .r .cxl6 {
-    flex-basis: 50%;
-  }
-  .birdhouse .r .columns-xlarge-7, .birdhouse .r .cxl7 {
-    flex-basis: 58.33333%;
-  }
-  .birdhouse .r .columns-xlarge-8, .birdhouse .r .cxl8 {
-    flex-basis: 66.66667%;
-  }
-  .birdhouse .r .columns-xlarge-9, .birdhouse .r .cxl9 {
-    flex-basis: 75%;
-  }
-  .birdhouse .r .columns-xlarge-10, .birdhouse .r .cxl10 {
-    flex-basis: 83.33333%;
-  }
-  .birdhouse .r .columns-xlarge-11, .birdhouse .r .cxl11 {
-    flex-basis: 91.66667%;
-  }
-  .birdhouse .r .columns-xlarge-12, .birdhouse .r .cxl12 {
+  .birdhouse .row .columns-xlarge-12, .birdhouse .row .cxl12, .birdhouse .r .columns-xlarge-12, .birdhouse .r .cxl12 {
     flex-basis: 100%;
   }
 }
