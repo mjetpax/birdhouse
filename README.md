@@ -9,6 +9,32 @@ A super light weight no conflict CSS flexbox responsive grid.
 
 Demo: http://mjetpax.github.io/birdhouse/
 
+
+## Quick Start
+
+Get Birdhouse up and running quickly with ease.
+
+1. Add the following CSS style link to the head of your HTML document.
+```
+<head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mjetpax/birdhouse/v0.7.2/css/birdhouse.min.css">
+</head>
+```
+
+2. Add the following HTML to the body of your HTML document.
+```
+<body>
+    <div class="birdhouse">
+        <div class="row">
+            <div class="columns-small-12">Hello World!</div>
+        </div>
+    </div>
+</body>
+```
+
+3. You're all set! Now go have some fun!!
+
+
 ## The Grid and Column Classes
 
 By default Birdhouse uses a 12 column grid system. This can be easily adjusted in the _variables.scss file, but does require a recompile. Birdhouse supports both fluid and fixed width layouts. Use .birdhouse for fixed width and .birdhouse .fluid for fluid layouts.
