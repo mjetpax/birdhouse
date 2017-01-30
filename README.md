@@ -175,10 +175,26 @@ Birdhouse allows you to hide and show elements at specific breakpoints using the
 * .show-xlarge, .shw-xl
 
 ##### Example usage
+
 ```
 <div class="birdhouse">
     <div class="hide-medium">
         <p>This is only shown to mobile devices.</p>
+    </div>
+</div>
+```
+Or
+```
+<div class="birdhouse">
+    <div class="row hide-medium">
+        <div class="column-xsmall-12">
+            <p>This is only shown to mobile devices.</p>
+        </div>
+    </div>
+    <div class="row show-medium">
+        <div class="column-xsmall-12">
+            <p>This is never shown to mobile devices.</p>
+        </div>
     </div>
 </div>
 ```
