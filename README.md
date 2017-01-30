@@ -12,16 +12,16 @@ Demo: http://mjetpax.github.io/birdhouse/
 
 ## Quick Start
 
-Get Birdhouse up and running quickly with ease.
+Quickly get Birdhouse up and running with ease.
 
-1. Add the following CSS style link to the head of your HTML document.
+1) Add the following CSS style link to the head of your HTML document.
 ```
 <head>
     <link rel="stylesheet" href="https://cdn.rawgit.com/mjetpax/birdhouse/v0.7.2/css/birdhouse.min.css">
 </head>
 ```
 
-2. Add the following HTML to the body of your HTML document.
+2) Add the following HTML to the body of your HTML document.
 ```
 <body>
     <div class="birdhouse">
@@ -32,7 +32,7 @@ Get Birdhouse up and running quickly with ease.
 </body>
 ```
 
-3. You're all set! Now go have some fun!!
+3) You're all set! Now go have some fun!!
 
 
 ## The Grid and Column Classes
