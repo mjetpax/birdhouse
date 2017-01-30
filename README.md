@@ -11,7 +11,7 @@ Demo: http://mjetpax.github.io/birdhouse/
 
 ## The Grid and Column Classes
 
-By default Birdhouse uses a 12 column grid system. This can be easily adjusted in the _variables.scss file, but does require a recompile. Additionally, birdhouse supports both fluid and fixed width layouts. Use .birdhouse for fixed width and .birdhouse .fluid for fluid layouts.
+By default Birdhouse uses a 12 column grid system. This can be easily adjusted in the _variables.scss file, but does require a recompile. Birdhouse supports both fluid and fixed width layouts. Use .birdhouse for fixed width and .birdhouse .fluid for fluid layouts.
 
 All column sizes have standard column class names, with the prefix columns. Then the breakpoint size of the column, followed by the number of columns wide.
 
