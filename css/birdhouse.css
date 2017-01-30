@@ -136,52 +136,40 @@
   .birdhouse .show-xsmall, .birdhouse .sh-xs {
     display: block;
   }
-  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1,
-  .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
+  .birdhouse .row .columns-lazy-1, .birdhouse .row .clz1, .birdhouse .r .columns-lazy-1, .birdhouse .r .clz1 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2,
-  .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
+  .birdhouse .row .columns-lazy-2, .birdhouse .row .clz2, .birdhouse .r .columns-lazy-2, .birdhouse .r .clz2 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3,
-  .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
+  .birdhouse .row .columns-lazy-3, .birdhouse .row .clz3, .birdhouse .r .columns-lazy-3, .birdhouse .r .clz3 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4,
-  .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
+  .birdhouse .row .columns-lazy-4, .birdhouse .row .clz4, .birdhouse .r .columns-lazy-4, .birdhouse .r .clz4 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5,
-  .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
+  .birdhouse .row .columns-lazy-5, .birdhouse .row .clz5, .birdhouse .r .columns-lazy-5, .birdhouse .r .clz5 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6,
-  .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
+  .birdhouse .row .columns-lazy-6, .birdhouse .row .clz6, .birdhouse .r .columns-lazy-6, .birdhouse .r .clz6 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7,
-  .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
+  .birdhouse .row .columns-lazy-7, .birdhouse .row .clz7, .birdhouse .r .columns-lazy-7, .birdhouse .r .clz7 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8,
-  .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
+  .birdhouse .row .columns-lazy-8, .birdhouse .row .clz8, .birdhouse .r .columns-lazy-8, .birdhouse .r .clz8 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9,
-  .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
+  .birdhouse .row .columns-lazy-9, .birdhouse .row .clz9, .birdhouse .r .columns-lazy-9, .birdhouse .r .clz9 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10,
-  .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
+  .birdhouse .row .columns-lazy-10, .birdhouse .row .clz10, .birdhouse .r .columns-lazy-10, .birdhouse .r .clz10 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11,
-  .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
+  .birdhouse .row .columns-lazy-11, .birdhouse .row .clz11, .birdhouse .r .columns-lazy-11, .birdhouse .r .clz11 {
     flex-basis: 100%;
   }
-  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12,
-  .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
+  .birdhouse .row .columns-lazy-12, .birdhouse .row .clz12, .birdhouse .r .columns-lazy-12, .birdhouse .r .clz12 {
     flex-basis: 100%;
   }
   .birdhouse .row .columns-xsmall-1, .birdhouse .row .cxs1, .birdhouse .r .columns-xsmall-1, .birdhouse .r .cxs1 {
