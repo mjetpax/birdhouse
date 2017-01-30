@@ -168,11 +168,11 @@ Birdhouse allows you to hide and show elements at specific breakpoints using the
 
 #### Show at x breakpoint
 
-* .show-xsmall, .shw-xs
-* .show-small, .shw-sm
-* .show-medium, .shw-md
-* .show-large, .shw-lg
-* .show-xlarge, .shw-xl
+* .show-xsmall, .sh-xs
+* .show-small, .sh-sm
+* .show-medium, .sh-md
+* .show-large, .sh-lg
+* .show-xlarge, .sh-xl
 
 ##### Example usage
 
