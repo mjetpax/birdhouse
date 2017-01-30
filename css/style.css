@@ -1,7 +1,7 @@
 /* Birdhouse
  * CSS responsive grid
  *
- * Copyright (c) 2015 Michael Babcock
+ * Copyright (c) 2017 Michael Babcock
  * Distributed under the MIT License
  * http://opensource.org/licenses/MIT
  *
@@ -11,7 +11,8 @@
 [class*='columns-'] {
   background: CadetBlue;
   color: white;
-  border: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
@@ -20,9 +21,14 @@
 /* nested */
 [class*='columns-'] > .row > [class*='columns-'] {
   background-color: gold;
+  border: 0;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;  
 }
 
 /* nested nested */
-[class*='columns-'] > .row > [class*='columns-'] > .row > [class*='columns-'] {
+[class*='columns-'] > .row > [class*='columns-']  > .row > [class*='columns-'] {
   background-color: tomato;
+  border: 0;
+  border-right: 5px solid white;
 }
