@@ -17,7 +17,7 @@ Quickly get Birdhouse up and running with ease.
 1) Add the following CSS style link to the head of your HTML document.
 ```
 <head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/mjetpax/birdhouse/v0.7.4/css/birdhouse.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mjetpax/birdhouse@v0.7.4/css/birdhouse.min.css">
 </head>
 ```
 
